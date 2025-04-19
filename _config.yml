@@ -1,11 +1,11 @@
 # Site settings
-title: Guan Blog
-SEOTitle: 我一的博客 | Guan Blog
+title: Guan Essays
+SEOTitle: 我一的品集 | Guan Essays
 header-img: img/home-bg.jpg
 email: 1115713753@qq.com
-description: "这里是 @Guan我一 的个人博客，与你一起发现更大的世界 | 要做一个好奇的思考者"
+description: "这里是 @Guan我一 的个人小品文集，与你一起发现不一样的世界 | 要做一个好奇的思考者"
 keyword: "我一, Guan我一, Guan, guanyugangstar,  @1115713753, 我一的博客, Guan Blog, 博客, 个人网站, 互联网, Web, JavaScript, Dify, LLM, 读书, 美食"
-url: "https://guanyugang.space" # your host, for absolute URL
+url: "https://www.guanyugang.space" # your host, for absolute URL
 baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
