@@ -88,25 +88,6 @@ service-worker: true
 page-mathjax: false
 
 # Friends
-friends:
-  [
-    { title: "" },
-    { title: "" },
-    { title: "" },
-    { title: "" },
-    { title: "" },
-    { title: "" },
-    { title: "" },
-    { title: "" },
-  ]
+friends: false
 
-# hobbies
-hobbies:
-  [
-    { title: "美食“ },
-    { title: "读书” }，
-    { title: "旅游" },
-    { title: "" },
-    { title: "" },
-  ]
   
