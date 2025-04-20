@@ -7,8 +7,7 @@ author:     "Guan"
 header-style: text
 catalog: true
 tags:
-    - web
-    - Javascript
+    - 随笔
 ---
 
 > “活”的记忆
