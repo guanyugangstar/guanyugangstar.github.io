@@ -9,20 +9,12 @@
     {% endif %}
     <h5><a href="{{'/archive/' | prepend: site.baseurl }}">FEATURED TAGS</a></h5>
     <div class="tags">
-        {% capture tags %}
-        {% comment %}
-            there must be no space between for and if otherwise this tricky sort won't work.
-            url_encode/decode is for escaping otherwise extra <a> will get generated 
-            but it will break sort...
-        {% endcomment %}
-        {% for tag in site.tags %}{% if tag[1].size > site.featured-condition-size %}
-                <a data-sort="{{ site.posts.size | minus: tag[1].size | prepend: '0000' | slice: -4, 4 }}" 
-                    href="{{ site.baseurl }}/archive/?tag={{ tag[0] | url_encode }}"
-                    title="{{ tag[0] }}"
-                    rel="{{ tag[1].size }}">{{ tag[0] }}</a>__SEPARATOR__
-        {% endif %}{% endfor %}
-        {% endcapture %}
-        {{ tags | split:'__SEPARATOR__' | sort }}
+        <!-- 只显示指定的标签 -->
+        <a href="{{ site.baseurl }}/archive/?tag={{ '游记' | url_encode }}" title="游记">游记</a>
+        <a href="{{ site.baseurl }}/archive/?tag={{ '随想' | url_encode }}" title="随想">随想</a>
+        <a href="{{ site.baseurl }}/archive/?tag={{ 'AI编程' | url_encode }}" title="AI编程">AI编程</a>
+        <a href="{{ site.baseurl }}/archive/?tag={{ 'DIFY' | url_encode }}" title="DIFY">DIFY</a>
+        <a href="{{ site.baseurl }}/archive/?tag={{ 'N8N' | url_encode }}" title="N8N">N8N</a>
     </div>
 </section>
 {% endif %}
