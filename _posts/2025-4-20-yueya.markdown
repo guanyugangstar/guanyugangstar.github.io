@@ -7,7 +7,7 @@ author:     "Guan"
 header-style: text
 catalog: true
 tags:
-    - 随笔
+    - 游记
 ---
 
 >月牙堤游记

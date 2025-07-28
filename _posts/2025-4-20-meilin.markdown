@@ -7,7 +7,7 @@ author:     "Guan"
 header-style: text
 catalog: true
 tags:
-    - 随笔
+    - 游记
 ---
 
 >美龄宫游记

@@ -23,17 +23,21 @@ https://github.com/kitian616/jekyll-TeXt-theme
 					<sup>{{site.posts.size}}</sup>
 				</a>
 
-				{% capture tags %}
-				{% for tag in site.tags %}
-				<a data-sort="{{ site.posts.size | minus: tag[1].size | prepend: '0000' | slice: -4, 4 }}"
-					data-encode="{{ tag[0] | strip | url_encode }}" class="tag-button" title="{{ tag[0] }}"
-					rel="{{ tag[1].size }}">
-					{{ tag[0] }}
-					<sup>{{tag[1].size}}</sup>
-				</a>__SEPERATOR__
+				{% assign featured_tag_names = '游记,随想,AI编程,DIFY,N8N' | split: ',' %}
+				{% for tag_name in featured_tag_names %}
+					{% assign tag_count = 0 %}
+					{% for tag in site.tags %}
+						{% if tag[0] == tag_name %}
+							{% assign tag_count = tag[1].size %}
+						{% endif %}
+					{% endfor %}
+					<a data-sort="{{ site.posts.size | minus: tag_count | prepend: '0000' | slice: -4, 4 }}"
+						data-encode="{{ tag_name | strip | url_encode }}" class="tag-button" title="{{ tag_name }}"
+						rel="{{ tag_count }}">
+						{{ tag_name }}
+						<sup>{{ tag_count }}</sup>
+					</a>
 				{% endfor %}
-				{% endcapture %}
-				{{ tags | split:'__SEPERATOR__' | sort }}
 			</div>
 
 			<!-- Article List -->
