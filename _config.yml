@@ -73,7 +73,7 @@ netease_comment: false
 
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
-sidebar-about-description: "要做一个好奇的思考者 <br> React Team @ Meta"
+sidebar-about-description: "要做一个好奇的思考者 <br> guanyugangstar@outlook.com"
 sidebar-avatar: https://avatars.githubusercontent.com/u/200448896?s=400&u=b16f7aa0db655a59ea606bf964b97d12ac603e7e&v=4  # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
