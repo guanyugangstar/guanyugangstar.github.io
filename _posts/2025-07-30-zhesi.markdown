@@ -1,0 +1,17 @@
+---
+layout:     post
+title:      "哲思"
+subtitle:   " 引言 "
+date:       2025-01-01 12:00:00
+author:     "Guan"
+header-style: text
+catalog: true
+tags:
+    - 随想
+---
+
+>哲思（引言）
+
+![哲思](/img/zhesi.png)
+
+真正的哲思，是一种洞见，是直觉的认识，非科学论证、经验归纳和逻辑演绎。真正的哲思，是对人的感悟和认识。
