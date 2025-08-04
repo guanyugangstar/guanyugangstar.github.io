@@ -25,6 +25,40 @@ $ bundle install
 $ bundle exec jekyll serve  # alternatively, npm start
 ```
 
+### Windows Deployment
+
+If you are using Windows, follow these steps to set up and run the blog:
+
+1. **Install Ruby with DevKit**:
+   - Download and install the latest Ruby+Devkit from [RubyInstaller for Windows](https://rubyinstaller.org/)
+   - During installation, make sure to check "Add Ruby executables to your PATH"
+   - When prompted, choose to install MSYS2 and development toolchain
+
+2. **Install Bundler**:
+   ```sh
+   gem install bundler
+   ```
+
+3. **Install Dependencies**:
+   Navigate to your project directory and run:
+   ```sh
+   bundle install
+   ```
+
+4. **Run the Blog**:
+   You can start the blog in two ways:
+   - Using Jekyll directly:
+     ```sh
+     bundle exec jekyll serve
+     ```
+   - Using npm script (requires Node.js):
+     ```sh
+     npm start
+     ```
+
+5. **Access the Blog**:
+   Open your browser and go to `http://localhost:4000` to view your blog.
+
 ### Development (Build From Source)
 
 To modify the theme, you will need [Grunt](https://gruntjs.com/). There are numbers of tasks you can find in the `Gruntfile.js`, includes minifing JavaScript, compiling `.less` to `.css`, adding banners to keep the Apache 2.0 license intact, watching for changes, etc. 
@@ -46,11 +80,11 @@ Ports
 - [**Hexo**](https://github.com/Kaijun/hexo-theme-huxblog) by @kaijun
 - [**React-SSR**](https://github.com/LucasIcarus/huxpro.github.io/tree/ssr) by @LucasIcarus
 
-[Starter/Boilerplate](https://github.com/huxpro/huxblog-boilerplate)
+[Starter/Boilerplate](https://github.com/guanyugangstar/guanblog-boilerplate)
 - Out of date. Helps wanted for updating it on par with the main repo
 
 Translation
-- [🇨🇳  中文文档（有点过时）](https://github.com/Huxpro/huxpro.github.io/blob/master/_doc/README.zh.md)
+- [🇨🇳  中文文档（有点过时）](https://github.com/guanyugangstar/guanyugangstar.github.io/blob/master/_doc/README.zh.md)
 
 
 License
@@ -59,5 +93,5 @@ License
 Apache License 2.0.
 Copyright (c) 2015-present guanyugangstar
 
-Hux Blog is derived from [Clean Blog Jekyll Theme (MIT License)](https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll/)
+Guan Blog is derived from [Clean Blog Jekyll Theme (MIT License)](https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll/)
 Copyright (c) 2013-2016 Blackrock Digital LLC.
