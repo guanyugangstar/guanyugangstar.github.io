@@ -59,10 +59,15 @@ kramdown:
       start_line: 1
 
 # Disqus settings
-disqus_username: Guan
+# disqus_username: Guan
 
 # Netease settings
 netease_comment: false
+
+# Valine settings
+valine:
+  appId: <%= ENV['LEANCLOUD_APP_ID'] %>
+  appKey: <%= ENV['LEANCLOUD_APP_KEY'] %>
 
 # Analytics settings
 # Baidu Analytics
