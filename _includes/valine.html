@@ -3,14 +3,14 @@
 <script src="https://unpkg.com/leancloud-storage@3/dist/av-min.js"></script>
 <script src='https://unpkg.com/valine@1/dist/Valine.min.js'></script>
 <script>
-    // 从Jekyll配置获取Valine设置
-    var appId = '{{ site.valine.appId }}';
-    var appKey = '{{ site.valine.appKey }}';
+    // 尝试从全局变量获取LeanCloud凭证
+    var appId = window.LEANCLOUD_APP_ID || '{{ site.valine.appId }}';
+    var appKey = window.LEANCLOUD_APP_KEY || '{{ site.valine.appKey }}';
     
-    // 如果appId仍然是默认值，则尝试从全局变量获取
-    if (appId === 'YOUR_LEANCLOUD_APP_ID') {
-        appId = window.LEANCLOUD_APP_ID || '';
-        appKey = window.LEANCLOUD_APP_KEY || '';
+    // 如果appId仍然是默认值，则清空凭证
+    if (appId === 'YOUR_LEANCLOUD_APP_ID' || appId.indexOf('<%=') !== -1) {
+        appId = '';
+        appKey = '';
     }
     
     new Valine({
