@@ -1,0 +1,28 @@
+<!-- valine 评论框 start -->
+<div id="comment"></div>
+<script src="https://unpkg.com/leancloud-storage@3/dist/av-min.js"></script>
+<script src='https://unpkg.com/valine@1/dist/Valine.min.js'></script>
+<script>
+    // 从_site目录下的环境变量获取配置
+    var appId = '{{ site.valine.appId }}';
+    var appKey = '{{ site.valine.appKey }}';
+    
+    // 如果是环境变量格式，则尝试从客户端环境获取
+    if (appId.startsWith('<%= ENV')) {
+        appId = window.LEANCLOUD_APP_ID || '';
+        appKey = window.LEANCLOUD_APP_KEY || '';
+    }
+    
+    new Valine({
+        el:'#comment',
+        appId: appId,
+        appKey: appKey,
+        notify:true,
+        verify:false,
+        avatar:'mm',
+        pageSize:10,
+        path: '{{ page.url }}',
+        placeholder:'在这里写评论...'
+    });
+</script>
+<!-- valine 评论框 end -->

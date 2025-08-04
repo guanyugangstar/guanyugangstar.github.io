@@ -61,6 +61,14 @@ layout: default
                 <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
                 <!-- 网易云跟帖 评论框 end -->
                 {% endif %}
+
+                {% if site.valine.appId and site.valine.appKey %}
+                <!-- valine 评论框 start -->
+                <div class="comment">
+                    {% include valine.html %}
+                </div>
+                <!-- valine 评论框 end -->
+                {% endif %}
             </div>  
 
     <!-- Side Catalog Container -->
