@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="这里是我一的个人小品文集，与你一起发现不一样的世界 | 要做一个好奇的思考者">
+    <meta name="keywords" content="我一, Guan我一, Guan, guanyugangstar,  @1115713753, 我一的博客, Guan Blog, 博客, 个人网站, 互联网, Web, JavaScript, Dify, LLM, 读书, 美食">
+    <meta name="theme-color" content="#000000">
+
+    <!-- Open Graph -->
+    <meta property="og:title"
+        content="生命随想 - 我一的品集 | Guan Essays">
+    
+    <meta property="og:type" content="article">
+    <meta property="og:description" content="
+  生命随想
+
+">
+    
+    <meta property="article:published_time" content=" 2021-12-21T12:00:00Z">
+    
+    
+    <meta property="article:author" content="Guan">
+    
+    
+    <meta property="article:tag" content="游记">
+    
+    <meta property="article:tag" content="随想">
+    
+    
+    <meta property="og:image" content="https://www.guanyugang.spacehttps://avatars.githubusercontent.com/u/200448896?s=400&u=b16f7aa0db655a59ea606bf964b97d12ac603e7e&v=4">
+    <meta property="og:url" content="https://www.guanyugang.space/2021/12/21/dizhi/">
+    <meta property="og:site_name" content="我一的品集 | Guan Essays">
+
+    <title>生命随想 - 我一的品集 | Guan Essays</title>
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/pwa/manifest.json">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.guanyugang.space/2021/12/21/dizhi/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href=" /css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href=" /css/guan-blog.min.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
+        type="text/css">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+
+    <!-- Google AdSense -->
+    <script data-ad-client="ca-pub-6487568398225121" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top invert">
+    
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Guan Essays</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div id="huxblog_navbar">
+                <div class="navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                        
+                        
+                        <li>
+                            <a href="/archive/">Archive</a>
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li class="search-icon">
+                            <a href="javascript:void(0)">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <script>
+        // Drop Bootstarp low-performance Navbar
+        // Use customize navbar with high-quality material design animation
+        // in high-perf jank-free CSS3 implementation
+        var $body = document.body;
+        var $toggle = document.querySelector('.navbar-toggle');
+        var $navbar = document.querySelector('#huxblog_navbar');
+        var $collapse = document.querySelector('.navbar-collapse');
+
+        var __HuxNav__ = {
+            close: function () {
+                $navbar.className = " ";
+                // wait until animation end.
+                setTimeout(function () {
+                    // prevent frequently toggle
+                    if ($navbar.className.indexOf('in') < 0) {
+                        $collapse.style.height = "0px"
+                    }
+                }, 400)
+            },
+            open: function () {
+                $collapse.style.height = "auto"
+                $navbar.className += " in";
+            }
+        }
+
+        // Bind Event
+        $toggle.addEventListener('click', function (e) {
+            if ($navbar.className.indexOf('in') > 0) {
+                __HuxNav__.close()
+            } else {
+                __HuxNav__.open()
+            }
+        })
+
+        /**
+         * Since Fastclick is used to delegate 'touchstart' globally
+         * to hack 300ms delay in iOS by performing a fake 'click',
+         * Using 'e.stopPropagation' to stop 'touchstart' event from 
+         * $toggle/$collapse will break global delegation.
+         * 
+         * Instead, we use a 'e.target' filter to prevent handler
+         * added to document close HuxNav.  
+         *
+         * Also, we use 'click' instead of 'touchstart' as compromise
+         */
+        document.addEventListener('click', function (e) {
+            if (e.target == $toggle) return;
+            if (e.target.className == 'icon-bar') return;
+            __HuxNav__.close();
+        })
+    </script>
+    <!-- Search -->
+<div class="search-page">
+  <div class="search-icon-close-container">
+    <span class="search-icon-close">
+      <i class="fa fa-chevron-down"></i>
+    </span>
+  </div>
+  <div class="search-main container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <form></form>
+        <input type="text" id="search-input" placeholder="$ grep...">
+        </form>
+        <div id="search-results" class="mini-post-list"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Image to hack wechat -->
+<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="/img/home-bg.jpg" width="0" height="0"> -->
+
+<!-- Post Header -->
+
+
+
+<style type="text/css">
+    header.intro-header{
+        position: relative;
+        background-image: url('/img/home-bg.jpg');
+        background-color: ;
+    }
+
+    
+</style>
+
+
+
+
+<header class="intro-header style-text">
+
+    <div class="header-mask"></div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/archive/?tag=%E6%B8%B8%E8%AE%B0" title="游记">游记</a>
+                        
+                        <a class="tag" href="/archive/?tag=%E9%9A%8F%E6%83%B3" title="随想">随想</a>
+                        
+                    </div>
+                    <h1>生命随想</h1>
+                    
+                    <h2 class="subheading"> 游记随笔之九 </h2>
+                    <span class="meta">Posted by Guan on December 21, 2021</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+
+
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <!-- Multi-Lingual -->
+                
+
+				<blockquote>
+  <p>生命随想</p>
+</blockquote>
+
+<p>南京地质博物馆，是一处朝圣之地。这里没有圣像、僧侣、香炉和仪式，却可以净化你的心灵。据馆载，一百五十亿年前，宇宙自爆炸诞生，膨胀至今，浩瀚无边，容纳一千亿个星系；有个星系称作银河系，成形于一百亿年前，直径十万光年，含一千亿颗恒星，太阳属于其一，藏于星系外缘某点，几不可寻，却在四十六亿年前，孕育了人类的摇篮——地球；十亿年后，地球上发生了奇迹，生命的痕迹初显，并经漫长的演化，几次波折，五百万年前从非洲丛林走出了人类的祖先——南方古猿；十万年前，古猿终于进化成现代人类；人类从狩猎转为农耕，不过是一万年前的事情。如今，人类社会迅猛发展，但涉足之远，仅仅千万分之四光年距离而已；人类的星际航行时代，还遥遥无期。综上所述，较于广漠的宇宙，地球何等渺小，生命何等卑微！宇宙的空旷和冷寂,让人类近乎绝望，如手术刀般，将人的自尊切割的干干净净。族群况且如此，身处七十五亿茫茫人海中，不禁自问，个体的荣辱兴衰，还有意义吗？——答案是，唯有个体的存在，插上思想的翅膀，可超越时空，与宇宙同辉，重拾那失落的家园。</p>
+
+<p><img src="/img/dizhi.jpg" alt="南京地质博文馆" /></p>
+
+<p>现代科学证明，如同万物，人也是由一堆原子组成。这些原子从恒星“烹饪”出来，经新星和超新星爆炸抛射，落户到地球。按照一定法则，无数的碰撞和排斥后，电磁力将这些原子结合成各种分子，最终构成了我们的身体。然而，当真如此么？看着镜中的自己，这堆原子，何以竟如此生动、如此美丽！</p>
+
+<p>根据科学假说，地球温度下降后，在极其漫长的时间内，经过极其复杂的化学过程，无机小分子一步一步演化成原始生命，亚当和夏娃就是原核生物。在自然选择的作用下，原始生命由简单进化成复杂形态，造成了今天多姿多彩、蓬勃发展的生命世界。然而，当真如此么？最新研究表明，生命的起源问题远未解决。借助于超级计算机，在充分反应条件下，科学家模拟了大量无机物中合成简单蛋白质的反应。结果发现，首次成功合成的概率，如换算成时间，是宇宙年龄的5600倍。这还仅仅是一次成功的概率，尚且不考虑简单蛋白质结合成复杂原核的感人概率。这意味着什么？难道宇宙并非是一个巨大的运转机器，竟还深藏着不可猜测的目的么？</p>
+
+<p><img src="/img/dizhi1.jpg" alt="南京地质博文馆" /></p>
+
+<p>生命的最奇妙处，莫过于智慧的形成。据说，灵魂是智慧的载体。西方某大哲，曾撰写出《论灵魂》，身心二元论长盛不衰。但是，科学告诉我们，灵魂可能只是个子虚乌有的概念。生物体的情绪、欲望等“灵魂”现象，不过是神经组织的化学和光电反应而已，遵循着自然物理化学规律。当神经组织复杂到一定程度后，生物体产生了自我反思的意识，智慧就逐渐形成了。甚至认为，只要破译了神经密码，按密码造出电路来，也能产生同样的智慧。然而，当真如此吗？当我手中拿着这样的电路，尽管产生了无差别的智力现象，可它会感到饥饿吗？它会喜怒哀乐吗？如果我把它摔碎了，是不是等于谋杀了一个“人”？而“我”本人，这个正思考这些问题、写下这段文字的智慧之物，难道仅仅是一段编码程序？这段程序为何如此独特？“我”如果不在了，这篇文章仍在，思想产生的智慧是长存的吗？</p>
+
+<p>这些问题让人困惑，也让人着迷；让人卑谦，更让人敬畏。古往今来，多少最聪明的脑袋穷尽一生，苦思冥想，望着彼岸不可及，最后只能给信仰留下空间。结果是，大师们也不得不耍赖皮了，提出所谓的人择原理，译成大白话，即——问：为何宇宙是我们看到的这种样子？——答：如果它不是这个样子，我们就不会在这里。这个理论就像有人问你：“为何你欠我钱不还？”然后你回答：“如果我不欠你的钱，我们的关系就不会如此了。”这话等于啥也没说。</p>
+
+<p>事情何以至此？可能是，我们描述生命现象的语言出了问题。现代的语言是科学的语言，这种语言以逻辑为围栏、实验为种子、数学为耕具、想象为肥料，用符号描述着生命这一土壤中发生的各种现象。这种语言因追求形式上的简单明了，必然导致内容上的碎片化、抽象化，将动态的、活泼的、连续的、系统的实际生命过程，给割裂成静态的、僵化的、片段的、单一的系列图像，却忽视了事件之间重要的叠加、关联和纠缠过程。于是，面对变化无穷的生命现象，经典理论往往束手无策，陷入诠释困境，而不能自拔。就此而言，未来的生命答卷，如要大突破，非重构全新的语境不可。一定程度上，人工智能的发展，提供了不可测的应用前景。</p>
+
+<p>冬至当日，落叶飘零。当你随手拾起一片落叶，细细观摩，深深感悟。也许，你会惊叹，那生命的奥秘、那因果的源头，尽在一片落叶中。</p>
+
+<div align="right">二〇二一年十二月二十一日  南京</div>
+
+
+                <hr style="visibility: hidden;">
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2021/12/16/wujinzi/" data-toggle="tooltip" data-placement="top" title="吴敬梓纪念馆游记">
+                        Previous<br>
+                        <span>吴敬梓纪念馆游记</span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2025/01/01/zhesi/" data-toggle="tooltip" data-placement="top" title="哲思">
+                        Next<br>
+                        <span>哲思</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <hr style="visibility: hidden;">
+
+                
+
+                
+
+                
+                <!-- valine 评论框 start -->
+                <div class="comment">
+                    <!-- valine 评论框 start -->
+<div id="comment"></div>
+<script src="https://unpkg.com/leancloud-storage@3/dist/av-min.js"></script>
+<script src='https://unpkg.com/valine@1/dist/Valine.min.js'></script>
+<script>window.LEANCLOUD_APP_ID="jfUnPyJru2EFYGWL3lWFsk6c-gzGzoHsz";window.LEANCLOUD_APP_KEY="q6k0uylUk1W93e69BClAcYZD";</script>
+
+<script>
+    // 尝试从全局变量获取LeanCloud凭证
+    var appId = window.LEANCLOUD_APP_ID || 'YOUR_LEANCLOUD_APP_ID';
+    var appKey = window.LEANCLOUD_APP_KEY || 'YOUR_LEANCLOUD_APP_KEY';
+    
+    // 如果appId仍然是默认值，则清空凭证
+    if (appId === 'YOUR_LEANCLOUD_APP_ID' || appId.indexOf('<%=') !== -1) {
+        appId = '';
+        appKey = '';
+    }
+    
+    new Valine({
+        el:'#comment',
+        appId: appId,
+        appKey: appKey,
+        notify:true,
+        verify:false,
+        avatar:'mm',
+        pageSize:10,
+        path: '/2021/12/21/dizhi/',
+        placeholder:'在这里写评论...'
+    });
+</script>
+<!-- valine 评论框 end -->
+                </div>
+                <!-- valine 评论框 end -->
+                
+            </div>  
+
+    <!-- Side Catalog Container -->
+        
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+        
+
+    <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+
+
+<section>
+    
+        <hr class="hidden-sm hidden-xs">
+    
+    <h5><a href="/archive/">FEATURED TAGS</a></h5>
+    <div class="tags">
+        <!-- 动态显示指定的标签，即使当前没有文章包含这些标签 -->
+        
+        
+            <a href="/archive/?tag=%E6%B8%B8%E8%AE%B0" title="游记">游记</a>
+        
+            <a href="/archive/?tag=%E9%9A%8F%E6%83%B3" title="随想">随想</a>
+        
+            <a href="/archive/?tag=AI%E7%BC%96%E7%A8%8B" title="AI编程">AI编程</a>
+        
+            <a href="/archive/?tag=DIFY" title="DIFY">DIFY</a>
+        
+            <a href="/archive/?tag=N8N" title="N8N">N8N</a>
+        
+    </div>
+</section>
+
+
+                <!-- Friends Blog -->
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+<!-- add support for mathjax by voleking-->
+
+
+
+
+
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'hover',
+          placement: 'right',
+          // icon: '#'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <!-- SNS Link -->
+                
+
+
+<ul class="list-inline text-center">
+
+
+  
+  
+  
+  <li>
+    <a target="_blank" href="https://www.zhihu.com/people/wo-yi-2">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa  fa-stack-1x fa-inverse">知</i>
+      </span>
+    </a>
+  </li>
+  
+  
+  
+  
+  <li>
+    <a target="_blank" href="https://github.com/guanyugangstar">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+  
+  
+</ul>
+
+                <p class="copyright text-muted">
+                    Copyright &copy; Guan Essays 2025
+                    <br>
+                    Powered by Guan Blog
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<!-- Currently, only navbar scroll-down effect at desktop still depends on this -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/guan-blog.min.js "></script>
+
+<!-- Simple Jekyll Search -->
+<script src="/js/simple-jekyll-search.min.js"></script>
+
+<!-- Service Worker -->
+
+<script src="/js/snackbar.js "></script>
+<script src="/js/sw-registration.js "></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+        var d = document, t = 'script',
+            o = d.createElement(t),
+            s = d.getElementsByTagName(t)[0];
+        o.src = u;
+        if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+        s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!--
+     Because of the native support for backtick-style fenced code blocks
+     right within the Markdown is landed in Github Pages,
+     From V1.6, There is no need for Highlight.js,
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/
+     - https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+
+
+
+
+
+<!--fastClick.js -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function () {
+        var $nav = document.querySelector("nav");
+        if ($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+<!-- Side Catalog -->
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        // interop with multilangual 
+        if ('' == 'true') {
+            _containerSelector = 'div.post-container.active'
+        } else {
+            _containerSelector = 'div.post-container'
+        }
+
+        // init
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        // clean
+        $(selector).html('')
+
+        // appending
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    // toggle side catalog
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    /*
+     * Doc: https://github.com/davist11/jQuery-One-Page-Nav
+     * Fork by Guan to support padding
+     */
+    async("/js/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+<!-- Multi-Lingual -->
+
+
+<!-- Simple Jekyll Search -->
+<script>
+    // https://stackoverflow.com/questions/1912501/unescape-html-entities-in-javascript
+    function htmlDecode(input) {
+        var e = document.createElement('textarea');
+        e.innerHTML = input;
+        // handle case of empty input
+        return e.childNodes.length === 0 ? "" : e.childNodes[0].nodeValue;
+    }
+
+    SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('search-results'),
+        json: '/search.json',
+        searchResultTemplate: '<div class="post-preview item"><a href="{url}"><h2 class="post-title">{title}</h2><h3 class="post-subtitle">{subtitle}</h3><hr></a></div>',
+        noResultsText: 'No results',
+        limit: 50,
+        fuzzy: false,
+        // a hack to get escaped subtitle unescaped. for some reason, 
+        // post.subtitle w/o escape filter nuke entire search.
+        templateMiddleware: function (prop, value, template) {
+            if (prop === 'subtitle' || prop === 'title') {
+                if (value.indexOf("code")) {
+                    return htmlDecode(value);
+                } else {
+                    return value;
+                }
+            }
+        }
+    });
+
+    $(document).ready(function () {
+        var $searchPage = $('.search-page');
+        var $searchOpen = $('.search-icon');
+        var $searchClose = $('.search-icon-close');
+        var $searchInput = $('#search-input');
+        var $body = $('body');
+
+        $searchOpen.on('click', function (e) {
+            e.preventDefault();
+            $searchPage.toggleClass('search-active');
+            var prevClasses = $body.attr('class') || '';
+            setTimeout(function () {
+                $body.addClass('no-scroll');
+            }, 400)
+
+            if ($searchPage.hasClass('search-active')) {
+                $searchClose.on('click', function (e) {
+                    e.preventDefault();
+                    $searchPage.removeClass('search-active');
+                    $body.attr('class', prevClasses);  // from closure 
+                });
+                $searchInput.focus();
+            }
+        });
+    });
+</script>
+
+
+<!-- Image to hack wechat -->
+<img src="/img/icon_wechat.png" width="0" height="0" alt="wechat icon" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

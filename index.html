@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="这里是我一的个人小品文集，与你一起发现不一样的世界 | 要做一个好奇的思考者">
+    <meta name="keywords" content="我一, Guan我一, Guan, guanyugangstar,  @1115713753, 我一的博客, Guan Blog, 博客, 个人网站, 互联网, Web, JavaScript, Dify, LLM, 读书, 美食">
+    <meta name="theme-color" content="#000000">
+
+    <!-- Open Graph -->
+    <meta property="og:title"
+        content="我一的品集 | Guan Essays">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:description"
+        content="「星空和道德 自在与自为」">
+    
+    <meta property="og:image" content="https://www.guanyugang.spacehttps://avatars.githubusercontent.com/u/200448896?s=400&u=b16f7aa0db655a59ea606bf964b97d12ac603e7e&v=4">
+    <meta property="og:url" content="https://www.guanyugang.space/">
+    <meta property="og:site_name" content="我一的品集 | Guan Essays">
+
+    <title>我一的品集 | Guan Essays</title>
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/pwa/manifest.json">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.guanyugang.space/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href=" /css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href=" /css/guan-blog.min.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
+        type="text/css">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+
+    <!-- Google AdSense -->
+    <script data-ad-client="ca-pub-6487568398225121" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Guan Essays</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div id="huxblog_navbar">
+                <div class="navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                        
+                        
+                        <li>
+                            <a href="/archive/">Archive</a>
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li class="search-icon">
+                            <a href="javascript:void(0)">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <script>
+        // Drop Bootstarp low-performance Navbar
+        // Use customize navbar with high-quality material design animation
+        // in high-perf jank-free CSS3 implementation
+        var $body = document.body;
+        var $toggle = document.querySelector('.navbar-toggle');
+        var $navbar = document.querySelector('#huxblog_navbar');
+        var $collapse = document.querySelector('.navbar-collapse');
+
+        var __HuxNav__ = {
+            close: function () {
+                $navbar.className = " ";
+                // wait until animation end.
+                setTimeout(function () {
+                    // prevent frequently toggle
+                    if ($navbar.className.indexOf('in') < 0) {
+                        $collapse.style.height = "0px"
+                    }
+                }, 400)
+            },
+            open: function () {
+                $collapse.style.height = "auto"
+                $navbar.className += " in";
+            }
+        }
+
+        // Bind Event
+        $toggle.addEventListener('click', function (e) {
+            if ($navbar.className.indexOf('in') > 0) {
+                __HuxNav__.close()
+            } else {
+                __HuxNav__.open()
+            }
+        })
+
+        /**
+         * Since Fastclick is used to delegate 'touchstart' globally
+         * to hack 300ms delay in iOS by performing a fake 'click',
+         * Using 'e.stopPropagation' to stop 'touchstart' event from 
+         * $toggle/$collapse will break global delegation.
+         * 
+         * Instead, we use a 'e.target' filter to prevent handler
+         * added to document close HuxNav.  
+         *
+         * Also, we use 'click' instead of 'touchstart' as compromise
+         */
+        document.addEventListener('click', function (e) {
+            if (e.target == $toggle) return;
+            if (e.target.className == 'icon-bar') return;
+            __HuxNav__.close();
+        })
+    </script>
+    <!-- Search -->
+<div class="search-page">
+  <div class="search-icon-close-container">
+    <span class="search-icon-close">
+      <i class="fa fa-chevron-down"></i>
+    </span>
+  </div>
+  <div class="search-main container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <form></form>
+        <input type="text" id="search-input" placeholder="$ grep...">
+        </form>
+        <div id="search-results" class="mini-post-list"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Page Header -->
+
+
+
+<style type="text/css">
+    header.intro-header{
+        position: relative;
+        background-image: url('/img/home-bg.jpg');
+        background-color: ;
+    }
+
+    
+</style>
+
+
+
+
+
+
+
+<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
+  <div class="header-mask"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        
+        <div class="site-heading">
+        
+          <h1>Guan Essays</h1>
+          <span class="subheading">「星空和道德 自在与自为」</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+<!-- Main Content -->
+<div class="container">
+  <div class="row">
+    
+
+    <!-- USE SIDEBAR -->
+    <!-- PostList Container -->
+    <div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-12
+      col-xs-12 postlist-container">
+      
+<div class="post-preview">
+    <a href="/2025/01/01/ziwo/">
+        <h2 class="post-title">
+            我是谁
+        </h2>
+        
+        <h3 class="post-subtitle">
+             论自我 
+        </h3>
+        
+        <div class="post-content-preview">
+            
+                
+  我的自我观
+
+
+（一）自我的研究方法。自我解释本身就是悖论，人们对于自我的认识同时改变着自我的认识。因此，从逻辑上看，这种反身性，人类注定无法把握完善的自我。也意味着，对自我的认识，只能在人生的体验中进入循环，通过直觉感悟，而不是理性把握。只有跳进泳池，才能学会游泳。
+
+
+
+（二）流俗的自我。一般意义上，在生存现象状态下，自我是排除了自然、他者任何属性和样态的残留，我称之为流俗的自我。...
+            
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Guan on January 1, 2025
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2025/01/01/shijie/">
+        <h2 class="post-title">
+            我的世界观
+        </h2>
+        
+        <h3 class="post-subtitle">
+             论世界 
+        </h3>
+        
+        <div class="post-content-preview">
+            
+                
+  我的世界观
+
+
+（一）从本源看，凡物存在，必有原因，无限追溯，直至因自而存在的“一”。“一”是混沌，蕴含着各种可能元素，如时间元素、空间元素和精神元素。这些元素无差别混同为无定型的根元。
+反驳：按此逻辑，也可推至自因存在的“二”、“三”、“四”乃至“无限多”。
+辩驳：因先天统觉的自明性，“二”、“三”乃至“无限多”均可归为“一”。
+
+
+
+（二）从现象看，世界为“三”，包括时间、空间和精...
+            
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Guan on January 1, 2025
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2025/01/01/zhesi/">
+        <h2 class="post-title">
+            哲思
+        </h2>
+        
+        <h3 class="post-subtitle">
+             引言 
+        </h3>
+        
+        <div class="post-content-preview">
+            
+                
+  哲思（引言）
+
+
+
+
+真正的哲思，是一种洞见，是直觉的认识，非科学论证、经验归纳和逻辑演绎。真正的哲思，是对人的感悟和认识。
+
+            
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Guan on January 1, 2025
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2021/12/21/dizhi/">
+        <h2 class="post-title">
+            生命随想
+        </h2>
+        
+        <h3 class="post-subtitle">
+             游记随笔之九 
+        </h3>
+        
+        <div class="post-content-preview">
+            
+                
+  生命随想
+
+
+南京地质博物馆，是一处朝圣之地。这里没有圣像、僧侣、香炉和仪式，却可以净化你的心灵。据馆载，一百五十亿年前，宇宙自爆炸诞生，膨胀至今，浩瀚无边，容纳一千亿个星系；有个星系称作银河系，成形于一百亿年前，直径十万光年，含一千亿颗恒星，太阳属于其一，藏于星系外缘某点，几不可寻，却在四十六亿年前，孕育了人类的摇篮——地球；十亿年后，地球上发生了奇迹，生命的痕迹初显，并经漫长的演化...
+            
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Guan on December 21, 2021
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2021/12/16/wujinzi/">
+        <h2 class="post-title">
+            吴敬梓纪念馆游记
+        </h2>
+        
+        <h3 class="post-subtitle">
+             游记随笔之八 
+        </h3>
+        
+        <div class="post-content-preview">
+            
+                
+  吴敬梓纪念馆游记
+
+
+知识分子对现存制度的批评，东西方是大不同的。西方人认为这是当然的权利，东方人则当作是应尽的责任。吴敬梓，深受儒家熏陶和浸染，却甘为一名知识界的“牛虻”，赶在了时代的前头。他，试图捍卫理想，几经磨砺，摒弃了仕途。也正因此，使他拥有了批评的权利，以笔为器，针砭时弊，赋予其作品非凡的魅力，成就传世之作——《儒林外史》。
+
+
+
+吴敬梓纪念馆，于一九九七年复建，坐落东关头路...
+            
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Guan on December 16, 2021
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2021/12/07/jiyi/">
+        <h2 class="post-title">
+            记忆点滴
+        </h2>
+        
+        <h3 class="post-subtitle">
+             游记随笔之七 
+        </h3>
+        
+        <div class="post-content-preview">
+            
+                
+  记忆点滴
+
+
+少年，你们在寻什么？是秘密卡点、湖光山色？还是友爱、亲情？甚至于欢笑和希望？而我，却踏入另一旅程，去追忆似水年华。
+
+人生似乎漫漫，但可追忆者渺渺，缩成断续片段，绝大多数早已遗落，无处寻迹。每念此，徒叹人生的短暂和虚无。
+
+年少之人，不喜回忆，憧憬未来；年老之人，总爱回忆，留足过去。而人过中年，生命的天平便渐渐向着过去倾斜，难免要追忆。正如溺水之人渴望边岸，唯抓取痛苦、快...
+            
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Guan on December 7, 2021
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2021/11/16/yueya/">
+        <h2 class="post-title">
+            月牙堤游记
+        </h2>
+        
+        <h3 class="post-subtitle">
+             游记随笔之六 
+        </h3>
+        
+        <div class="post-content-preview">
+            
+                
+  月牙堤游记
+
+
+十一月的钟山，冬意渐浓，游人如织。梧桐披上了厚厚的黄袍，桂树、樟树依旧绿意盎然，鸡爪枫化作那一抹最动人的鲜红。不同的树木，幻为不同的乐器，大地将色彩变音符，用浓淡成高低，以错落划音节，奏响了一首恢弘博大、色彩斑斓的交响曲。
+
+
+
+二十七日下午，碧空如洗，月牙堤风景如画。磊落的阳光倾泻在前湖的水面，映出无数个闪闪湛亮的光点，处处眨着眼睛，晃得人如梦如幻。湖面的游舟，像一片...
+            
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Guan on November 16, 2021
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2021/11/16/yihe/">
+        <h2 class="post-title">
+            “活”的记忆
+        </h2>
+        
+        <h3 class="post-subtitle">
+             游记随笔之四 
+        </h3>
+        
+        <div class="post-content-preview">
+            
+                
+  “活”的记忆
+
+
+南京颐和公馆十二片区，一段失落后被重拾起的记忆。曾几何时，这里政客云集，高朋满座，薛岳、陈布雷、杨公达等民国名人的旧居都位于此。然而，旧的世态夹在两个时代、两股力量的缝隙中，经碰撞、碾压，碎裂在了日子里。二零零九年，片区经政府保护性修缮后，终于对外开放，宛如深藏楼阁的大家闺秀，露出那罕见的容颜，散发出典雅、高贵、慵懒的民国旧韵。
+
+片区位于江苏路与宁海路合围地带，由二...
+            
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Guan on November 16, 2021
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2021/11/16/meilin/">
+        <h2 class="post-title">
+            美龄宫游记
+        </h2>
+        
+        <h3 class="post-subtitle">
+             游记随笔之五 
+        </h3>
+        
+        <div class="post-content-preview">
+            
+                
+  美龄宫游记
+
+
+每当凝视极致之美，总会伴着些许痛楚。美龄宫，静卧于秀丽钟山之腹，三层重檐山式宫殿，雕梁画栋，中西合璧，美的不可方物。然而，想当初时局维艰，洋洋三十六万银造，心中也颇为酸痛。
+
+
+
+俱往矣，历九十年风雨，宫殿尚幸存。尽管墙面旧迹斑斑，楼板粉层剥痕道道，汉白玉栏杆风蚀累累，但往日丰姿依在，韵感尤存。初冬午后，天色阴阴，雨儿星星点点，一丝丝的冷。绿色琉璃瓦下，憩坐于二楼露台，...
+            
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Guan on November 16, 2021
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2021/11/08/wangq/">
+        <h2 class="post-title">
+            无法忘却的印记
+        </h2>
+        
+        <h3 class="post-subtitle">
+             游记随笔之三 
+        </h3>
+        
+        <div class="post-content-preview">
+            
+                
+  无法忘却的印记
+
+
+一双双眼睛，因岁月而模糊，仍透出星芒，汇成银河。二十年芳华，清晨的牵牛花初开，葬礼的号角就已吹响；生命之花如期绽放，却早早凋零，化作腐土。这凋零，带来的是大欢喜，这腐朽，带来的是大欢喜，是向死而生的本真的存在。
+
+
+
+这是两张八十多年前的泛黄旧照，静静地陈列在南京抗日航空烈士纪念馆一号展厅B-29轰炸机模拟机舱内。四周已空无一人，清冷昏暗的光线从展板后泛出，舱头一遍...
+            
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Guan on November 8, 2021
+    </p>
+</div>
+<hr>
+
+
+<!-- Pager -->
+
+<ul class="pager">
+    
+    
+    <li class="next">
+        <a href="/page2">Older Posts &rarr;</a>
+    </li>
+    
+</ul>
+
+
+    </div>
+    <!-- Sidebar Container -->
+    <div class="col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-12
+      col-xs-12 sidebar-container">
+      <!-- Featured Tags -->
+      
+
+
+<section>
+    
+    <h5><a href="/archive/">FEATURED TAGS</a></h5>
+    <div class="tags">
+        <!-- 动态显示指定的标签，即使当前没有文章包含这些标签 -->
+        
+        
+            <a href="/archive/?tag=%E6%B8%B8%E8%AE%B0" title="游记">游记</a>
+        
+            <a href="/archive/?tag=%E9%9A%8F%E6%83%B3" title="随想">随想</a>
+        
+            <a href="/archive/?tag=AI%E7%BC%96%E7%A8%8B" title="AI编程">AI编程</a>
+        
+            <a href="/archive/?tag=DIFY" title="DIFY">DIFY</a>
+        
+            <a href="/archive/?tag=N8N" title="N8N">N8N</a>
+        
+    </div>
+</section>
+
+
+      <!-- Short About -->
+      <section class="visible-md visible-lg">
+  <hr>
+  <h5><a href="/about/">ABOUT ME</a></h5>
+  <div class="short-about">
+    
+    <img src="https://avatars.githubusercontent.com/u/200448896?s=400&u=b16f7aa0db655a59ea606bf964b97d12ac603e7e&v=4" />
+    
+    
+    <p>要做一个好奇的思考者<br> guanyugangstar@outlook.com</p>
+    
+    <!-- SNS Link -->
+    
+
+
+<ul class="list-inline">
+
+
+  
+  
+  
+  <li>
+    <a target="_blank" href="https://www.zhihu.com/people/wo-yi-2">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa  fa-stack-1x fa-inverse">知</i>
+      </span>
+    </a>
+  </li>
+  
+  
+  
+  
+  <li>
+    <a target="_blank" href="https://github.com/guanyugangstar">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+  
+  
+</ul>
+  </div>
+</section>
+
+      <!-- Friends Blog -->
+      
+
+      <!-- Ads -->
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- first shot -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6487568398225121" data-ad-slot="4814308751"
+     data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <!-- SNS Link -->
+                
+
+
+<ul class="list-inline text-center">
+
+
+  
+  
+  
+  <li>
+    <a target="_blank" href="https://www.zhihu.com/people/wo-yi-2">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa  fa-stack-1x fa-inverse">知</i>
+      </span>
+    </a>
+  </li>
+  
+  
+  
+  
+  <li>
+    <a target="_blank" href="https://github.com/guanyugangstar">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+  
+  
+</ul>
+
+                <p class="copyright text-muted">
+                    Copyright &copy; Guan Essays 2025
+                    <br>
+                    Powered by Guan Blog
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<!-- Currently, only navbar scroll-down effect at desktop still depends on this -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/guan-blog.min.js "></script>
+
+<!-- Simple Jekyll Search -->
+<script src="/js/simple-jekyll-search.min.js"></script>
+
+<!-- Service Worker -->
+
+<script src="/js/snackbar.js "></script>
+<script src="/js/sw-registration.js "></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+        var d = document, t = 'script',
+            o = d.createElement(t),
+            s = d.getElementsByTagName(t)[0];
+        o.src = u;
+        if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+        s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!--
+     Because of the native support for backtick-style fenced code blocks
+     right within the Markdown is landed in Github Pages,
+     From V1.6, There is no need for Highlight.js,
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/
+     - https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+
+
+
+
+
+<!--fastClick.js -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function () {
+        var $nav = document.querySelector("nav");
+        if ($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+<!-- Side Catalog -->
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        // interop with multilangual 
+        if ('' == 'true') {
+            _containerSelector = 'div.post-container.active'
+        } else {
+            _containerSelector = 'div.post-container'
+        }
+
+        // init
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        // clean
+        $(selector).html('')
+
+        // appending
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    // toggle side catalog
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    /*
+     * Doc: https://github.com/davist11/jQuery-One-Page-Nav
+     * Fork by Guan to support padding
+     */
+    async("/js/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+<!-- Multi-Lingual -->
+
+
+<!-- Simple Jekyll Search -->
+<script>
+    // https://stackoverflow.com/questions/1912501/unescape-html-entities-in-javascript
+    function htmlDecode(input) {
+        var e = document.createElement('textarea');
+        e.innerHTML = input;
+        // handle case of empty input
+        return e.childNodes.length === 0 ? "" : e.childNodes[0].nodeValue;
+    }
+
+    SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('search-results'),
+        json: '/search.json',
+        searchResultTemplate: '<div class="post-preview item"><a href="{url}"><h2 class="post-title">{title}</h2><h3 class="post-subtitle">{subtitle}</h3><hr></a></div>',
+        noResultsText: 'No results',
+        limit: 50,
+        fuzzy: false,
+        // a hack to get escaped subtitle unescaped. for some reason, 
+        // post.subtitle w/o escape filter nuke entire search.
+        templateMiddleware: function (prop, value, template) {
+            if (prop === 'subtitle' || prop === 'title') {
+                if (value.indexOf("code")) {
+                    return htmlDecode(value);
+                } else {
+                    return value;
+                }
+            }
+        }
+    });
+
+    $(document).ready(function () {
+        var $searchPage = $('.search-page');
+        var $searchOpen = $('.search-icon');
+        var $searchClose = $('.search-icon-close');
+        var $searchInput = $('#search-input');
+        var $body = $('body');
+
+        $searchOpen.on('click', function (e) {
+            e.preventDefault();
+            $searchPage.toggleClass('search-active');
+            var prevClasses = $body.attr('class') || '';
+            setTimeout(function () {
+                $body.addClass('no-scroll');
+            }, 400)
+
+            if ($searchPage.hasClass('search-active')) {
+                $searchClose.on('click', function (e) {
+                    e.preventDefault();
+                    $searchPage.removeClass('search-active');
+                    $body.attr('class', prevClasses);  // from closure 
+                });
+                $searchInput.focus();
+            }
+        });
+    });
+</script>
+
+
+<!-- Image to hack wechat -->
+<img src="/img/icon_wechat.png" width="0" height="0" alt="wechat icon" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>
