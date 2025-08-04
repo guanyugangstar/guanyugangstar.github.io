@@ -66,8 +66,8 @@ netease_comment: false
 
 # Valine settings
 valine:
-  appId: jfUnPyJru2EFYGWL3lWFsk6c-gzGzoHsz
-  appKey: q6k0uylUk1W93e69BClAcYZD
+  appId: YOUR_LEANCLOUD_APP_ID
+  appKey: YOUR_LEANCLOUD_APP_KEY
 
 # Analytics settings
 # Baidu Analytics
