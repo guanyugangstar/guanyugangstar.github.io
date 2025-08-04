@@ -2,6 +2,7 @@
 <div id="comment"></div>
 <script src="https://unpkg.com/leancloud-storage@3/dist/av-min.js"></script>
 <script src='https://unpkg.com/valine@1/dist/Valine.min.js'></script>
+{% include valine_env.html %}
 <script>
     // 尝试从全局变量获取LeanCloud凭证
     var appId = window.LEANCLOUD_APP_ID || '{{ site.valine.appId }}';

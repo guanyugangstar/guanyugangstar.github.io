@@ -1,0 +1,10 @@
+@echo off
+REM 请将下面的占位符替换为你的实际 LeanCloud App ID 和 App Key
+set LEANCLOUD_APP_ID=YOUR_LEANCLOUD_APP_ID
+set LEANCLOUD_APP_KEY=YOUR_LEANCLOUD_APP_KEY
+
+echo ^<script^>window.LEANCLOUD_APP_ID="%LEANCLOUD_APP_ID%";window.LEANCLOUD_APP_KEY="%LEANCLOUD_APP_KEY%";^</script^> > _includes/valine_env.html
+
+bundle exec jekyll serve
+
+del _includes/valine_env.html

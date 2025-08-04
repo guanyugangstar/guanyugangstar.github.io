@@ -65,6 +65,8 @@ kramdown:
 netease_comment: false
 
 # Valine settings
+# 注意：在本地开发时，请通过 start.bat 配置环境变量
+# 在生产环境（GitHub Pages）中，请通过 GitHub Secrets 配置 LEANCLOUD_APP_ID 和 LEANCLOUD_APP_KEY
 valine:
   appId: YOUR_LEANCLOUD_APP_ID
   appKey: YOUR_LEANCLOUD_APP_KEY

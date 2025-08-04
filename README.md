@@ -45,8 +45,16 @@ If you are using Windows, follow these steps to set up and run the blog:
    bundle install
    ```
 
-4. **Run the Blog**:
+4. **Configure Environment Variables**:
+   - Copy `start.bat.example` to `start.bat`
+   - Edit `start.bat` and replace the placeholder values with your actual LeanCloud App ID and App Key
+
+5. **Run the Blog**:
    You can start the blog in two ways:
+   - Using the start script (recommended):
+     ```sh
+     start.bat
+     ```
    - Using Jekyll directly:
      ```sh
      bundle exec jekyll serve
@@ -56,7 +64,7 @@ If you are using Windows, follow these steps to set up and run the blog:
      npm start
      ```
 
-5. **Access the Blog**:
+6. **Access the Blog**:
    Open your browser and go to `http://localhost:4000` to view your blog.
 
 ### Development (Build From Source)
