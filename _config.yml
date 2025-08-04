@@ -66,8 +66,8 @@ netease_comment: false
 
 # Valine settings
 valine:
-  appId: <%= ENV['LEANCLOUD_APP_ID'] %>
-  appKey: <%= ENV['LEANCLOUD_APP_KEY'] %>
+  appId: YOUR_LEANCLOUD_APP_ID
+  appKey: YOUR_LEANCLOUD_APP_KEY
 
 # Analytics settings
 # Baidu Analytics

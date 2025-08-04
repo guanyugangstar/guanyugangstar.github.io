@@ -3,12 +3,12 @@
 <script src="https://unpkg.com/leancloud-storage@3/dist/av-min.js"></script>
 <script src='https://unpkg.com/valine@1/dist/Valine.min.js'></script>
 <script>
-    // 从_site目录下的环境变量获取配置
+    // 从Jekyll配置获取Valine设置
     var appId = '{{ site.valine.appId }}';
     var appKey = '{{ site.valine.appKey }}';
     
-    // 如果是环境变量格式，则尝试从客户端环境获取
-    if (appId.startsWith('<%= ENV')) {
+    // 如果appId仍然是默认值，则尝试从全局变量获取
+    if (appId === 'YOUR_LEANCLOUD_APP_ID') {
         appId = window.LEANCLOUD_APP_ID || '';
         appKey = window.LEANCLOUD_APP_KEY || '';
     }
