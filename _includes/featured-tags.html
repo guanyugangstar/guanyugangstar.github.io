@@ -10,7 +10,7 @@
     <h5><a href="{{'/archive/' | prepend: site.baseurl }}">FEATURED TAGS</a></h5>
     <div class="tags">
         <!-- 动态显示指定的标签，即使当前没有文章包含这些标签 -->
-        {% assign featured_tag_names = '游记,随想,AI编程,DIFY,N8N' | split: ',' %}
+        {% assign featured_tag_names = '游记,随想,AI编程,DIFY,N8N,读书' | split: ',' %}
         {% for tag_name in featured_tag_names %}
             <a href="{{ site.baseurl }}/archive/?tag={{ tag_name | url_encode }}" title="{{ tag_name }}">{{ tag_name }}</a>
         {% endfor %}
