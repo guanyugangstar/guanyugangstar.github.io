@@ -5,9 +5,113 @@
     <description>这里是我一的个人小品文集，与你一起发现不一样的世界 | 要做一个好奇的思考者</description>
     <link>https://www.guanyugang.space/</link>
     <atom:link href="https://www.guanyugang.space/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 07 Aug 2025 02:57:40 +0000</pubDate>
-    <lastBuildDate>Thu, 07 Aug 2025 02:57:40 +0000</lastBuildDate>
+    <pubDate>Sat, 09 Aug 2025 12:33:42 +0000</pubDate>
+    <lastBuildDate>Sat, 09 Aug 2025 12:33:42 +0000</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>Mineru本地安装要点</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;Mineru本地安装要点&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;git clone https://github.com/opendatalab/MinerU.git
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;MinerU
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;python &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; venv .venv
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;.venv&lt;span class=&quot;se&quot;&gt;\s&lt;/span&gt;cripts&lt;span class=&quot;se&quot;&gt;\a&lt;/span&gt;ctivate.ps1
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;uv pip &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; .[core] &lt;span class=&quot;c&quot;&gt;# 安装核心组件，不含GPU加速&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;修改 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;magic_pdf.json&lt;/code&gt;，将env的&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cuda&lt;/code&gt;修改为&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cpu&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;终端运行：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bash
+mineru -p &amp;lt;源文件地址/文件名.pdf&amp;gt; -o &amp;lt;目标地址&amp;gt;
+&lt;/code&gt;
+&lt;strong&gt;自动安装解析模型&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Docker部署运行：
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; .&lt;span class=&quot;se&quot;&gt;\p&lt;/span&gt;rojects&lt;span class=&quot;se&quot;&gt;\w&lt;/span&gt;eb-api
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;退出虚拟环境，修改&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dockerfile&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;app.py&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;download_models.py&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;entrypoint.sh&lt;/code&gt;，在VS Code中将行尾符从CRLF修改为LF（Linux用）&lt;/li&gt;
+      &lt;li&gt;运行：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bash
+docker build -t mineru-api
+&lt;/code&gt;
+如果Hugging Face中下载模型时间过长，将会终止报错，请执行如下程序：
+        &lt;ul&gt;
+          &lt;li&gt;打开&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;download_models.py&lt;/code&gt;，将模型下载路径修改：
+            &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;n&quot;&gt;model_dir&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;snapshot_download&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;……&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;local_dir&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;./models/&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;layoutreader_model_dir&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;snapshot_download&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;……&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;local_dir&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;./models/layoutreader/&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li&gt;打开&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Dockerfile&lt;/code&gt;，将下载改为拷贝本地文件：
+            &lt;div class=&quot;language-dockerfile highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;c&quot;&gt;# Copy pre-downloaded models (删除原Run语句)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;COPY&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; models/models /opt/models/&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;COPY&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; models/layoutreader /opt/layoutreader/&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li&gt;进入虚拟环境中，运行：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bash
+python download_models.py
+&lt;/code&gt;
+将模型下载到本地&lt;/li&gt;
+          &lt;li&gt;
+            &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;deactivate
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li&gt;在第9步配置完Dify后，运行：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bash
+docker build -t mineru-api
+&lt;/code&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;启动容器：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bash
+docker run -it -p 17777:8000 mineru-api
+&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;配置Dify环境
+    &lt;ul&gt;
+      &lt;li&gt;进入Dify的env，设置&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FILES_URL=http://api:5001&lt;/code&gt;，将&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker-compose.yaml&lt;/code&gt;内容相应调整，并打开&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dify-api&lt;/code&gt;容器的&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ports: 5001:5001&lt;/code&gt;外部映射端口&lt;/li&gt;
+      &lt;li&gt;关闭重启Dify&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;下载Mineru插件，授信地址为：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;http://host.docker.internal:5001&lt;/code&gt;，类型本地部署，密码不填。&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        <pubDate>Sun, 01 Jun 2025 12:00:00 +0000</pubDate>
+        <link>https://www.guanyugang.space/2025/06/01/mineru/</link>
+        <guid isPermaLink="true">https://www.guanyugang.space/2025/06/01/mineru/</guid>
+        
+        <category>DIFY</category>
+        
+        
+      </item>
     
       <item>
         <title>论人生</title>
@@ -282,39 +386,6 @@
         <pubDate>Tue, 16 Nov 2021 12:00:00 +0000</pubDate>
         <link>https://www.guanyugang.space/2021/11/16/yueya/</link>
         <guid isPermaLink="true">https://www.guanyugang.space/2021/11/16/yueya/</guid>
-        
-        <category>游记</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>“活”的记忆</title>
-        <description>&lt;blockquote&gt;
-  &lt;p&gt;“活”的记忆&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;南京颐和公馆十二片区，一段失落后被重拾起的记忆。曾几何时，这里政客云集，高朋满座，薛岳、陈布雷、杨公达等民国名人的旧居都位于此。然而，旧的世态夹在两个时代、两股力量的缝隙中，经碰撞、碾压，碎裂在了日子里。二零零九年，片区经政府保护性修缮后，终于对外开放，宛如深藏楼阁的大家闺秀，露出那罕见的容颜，散发出典雅、高贵、慵懒的民国旧韵。&lt;/p&gt;
-
-&lt;p&gt;片区位于江苏路与宁海路合围地带，由二十六幢风格鲜明的民国时期别墅组成。这些二、三层的独立别墅，以西式为体、中式为辅，尽显新民族主义建筑风格，多有柱式门廊、室外露台、“人字”屋顶、墙线勾勒、天窗、烟囱等元素，形式简约，造型典雅，始建于上世纪二、三十年代。外墙以黄、红、青灰三色为主，屋顶铺有红瓦或灰瓦，窗框的颜色和线条较显目，多为红色，起到强调效果，整体和谐统一。在金色阳光的辉映下，栋栋别墅如缕缕清香的花朵，温文娴静，落落大方。&lt;/p&gt;
-
-&lt;p&gt;片区的主径斜东北走向，依别墅坐落，分几条支径，呈犬牙交错状。初入者，易迷失其中。园中草木一丛丛的，干净整齐，枝叶繁茂，簇拥着别墅，如绿叶配着花朵，衬的那么香、那么雅。周边大树参天挺拔，婆娑的树影游移在墙面，淙淙的流水声隐隐传来。游人三三两两，或闲坐边椅小憩，或停下脚步留影。不远处，一群人们正在筹备婚礼。真是一派岁月流长、人间静好！&lt;/p&gt;
-
-&lt;p&gt;如果说，旧时的公馆是一杯现磨咖啡，味道醇正，口感厚实，那么，现今的公馆就是一杯速溶咖啡，多了些人工香料、奶精的味道，却少了份浓郁。园中至今仍留有黄包车、旗袍、石墩、书画等民国物件，唯独不见了皮肤黝黑的车夫、婀娜身姿的旗女、风范尚存的故人后代。虽存些许旧时的印记，却少了点作料，多了点杂料，口味变杂了，变淡了。这作料，跳着生命的脉搏，它们是“活”的，是流动的，它们构成了文化真正的魂。&lt;/p&gt;
-
-&lt;p&gt;约二十年前，我曾混迹于南捕厅老城南片区数年，住在附近的一座高楼内。这里老街老巷星罗棋布，一条条巷子紧密相连，记忆中是有“泥马巷”、“平章巷”、“绫庄巷”的，但更多的则忘了。沿街的房屋鳞次栉比，白墙灰瓦，两层居多，墙面斑驳点点，门窗旧迹累累。跨过临街的门坎石，往往里面还有很深的弄堂，光线暗淡，人影晃动。街上的铺子有很多，五花八门，理发的、洗澡的、吃饭的、裁剪的、卖杂货的、开音像的、做家具的，数都数不清。最奇怪的，还有卖熟水的，也就是“老虎灶”，店里头有个翘起的“尾巴”和灶头。
-晴朗的日子里，阳光铺洒在每个角落，街上人来人往，热闹的很。小商小贩挑着扁担，打着“敲头”，沿街吆喝着；老太太坐在家门口，晒着太阳，如石佛般入定；店老板椅在柜台后，摊着双手，放开两腿，愣愣地望着街口；屋子里传来油锅下菜，锅铲炒动的声音，还传来麻将洗牌的声音；女孩们跳着皮筋，有男孩不时地捣蛋，一阵打逐欢闹声；猫儿悄悄地踩着屋面行走，狗儿蹲在地上打着哈欠，伸出长长的舌头……这里，曾是南京居民最密集的地方，也是传统习俗最多的地方；这里，民风醇厚，历史悠久。&lt;/p&gt;
-
-&lt;p&gt;二零零九年，政府启动了南捕厅地块环境整治项目，开始了周边拆迁工程。不久，一排排房子的外墙被写上鲜红醒目的大大的“拆”字。于是，住户们陆续搬离，一并带走的，还有那份回忆。街巷的人越来越少，到了夜里，灯火零星，巷口几乎遇不上人，往日的喧闹已然不存。&lt;/p&gt;
-
-&lt;p&gt;一天晚上，空气中传来一阵焦糊味，周围有人大喊大叫。我急忙走到阳台，推窗望去。只见不到半里处，拆迁工地中原老街的十字路口，有一栋两层客栈燃起了熊熊大火。不多时，呼啸的消防车赶到，队员们拼命地向周边的房屋喷水降温。忽然，“哗”的一声，屋架猛然倒塌。霎时，客栈就像一个巨大的被点燃的干柴堆，火焰越烧越兴奋，畅快淋漓如脱缰野马，欢快奔腾起来，飞冲直抵二、三十米高。伴随的浓烟滚滚，如一条黑龙，直贯云霄。火光映红了半边天，似乎空气都被点着了。
-在千百双眼睛的注目下，老城南客栈，以最绚丽的色彩、最动人的仪式，向一个消失的时代挥手告别，似乎在说——别了，不送。&lt;/p&gt;
-
-&lt;p&gt;二〇二一年十一月十六日  南京&lt;/p&gt;
-</description>
-        <pubDate>Tue, 16 Nov 2021 12:00:00 +0000</pubDate>
-        <link>https://www.guanyugang.space/2021/11/16/yihe/</link>
-        <guid isPermaLink="true">https://www.guanyugang.space/2021/11/16/yihe/</guid>
         
         <category>游记</category>
         
