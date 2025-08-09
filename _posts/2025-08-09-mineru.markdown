@@ -1,0 +1,74 @@
+---
+layout:     post
+title:      "Mineru本地安装要点"
+subtitle:   "Dify技巧"
+date:       2025-06-01 12:00:00
+author:     "Guan"
+header-style: text
+catalog: true
+tags:
+    - DIFY
+---
+
+> Mineru本地安装要点
+
+1. ```bash
+   git clone https://github.com/opendatalab/MinerU.git
+   ```
+2. ```bash
+   cd MinerU
+   ```
+3. ```bash
+   python -m venv .venv
+   ```
+4. ```bash
+   .venv\scripts\activate.ps1
+   ```
+5. ```bash
+   uv pip install -e .[core] # 安装核心组件，不含GPU加速
+   ```
+6. 修改 `magic_pdf.json`，将env的`cuda`修改为`cpu`
+7. 终端运行：```bash
+   mineru -p <源文件地址/文件名.pdf> -o <目标地址>
+   ```
+   **自动安装解析模型**
+8. Docker部署运行：
+   - ```bash
+     cd .\projects\web-api
+     ```
+   - 退出虚拟环境，修改`dockerfile`、`app.py`、`download_models.py`、`entrypoint.sh`，在VS Code中将行尾符从CRLF修改为LF（Linux用）
+   - 运行：```bash
+     docker build -t mineru-api
+     ```
+     如果Hugging Face中下载模型时间过长，将会终止报错，请执行如下程序：
+     - 打开`download_models.py`，将模型下载路径修改：
+       ```python
+       model_dir = snapshot_download(……, local_dir="./models/")
+       layoutreader_model_dir = snapshot_download(……, local_dir="./models/layoutreader/")
+       ```
+     - 打开`Dockerfile`，将下载改为拷贝本地文件：
+       ```dockerfile
+       # Copy pre-downloaded models (删除原Run语句)
+       COPY models/models /opt/models/
+       COPY models/layoutreader /opt/layoutreader/
+       ```
+     - 进入虚拟环境中，运行：```bash
+       python download_models.py
+       ```
+       将模型下载到本地
+     - ```bash
+       deactivate
+       ```
+     - 在第9步配置完Dify后，运行：```bash
+       docker build -t mineru-api
+       ```
+   - 启动容器：```bash
+     docker run -it -p 17777:8000 mineru-api
+     ```
+
+9. 配置Dify环境
+   - 进入Dify的env，设置`FILES_URL=http://api:5001`，将`docker-compose.yaml`内容相应调整，并打开`dify-api`容器的`ports: 5001:5001`外部映射端口
+   - 关闭重启Dify
+10. 下载Mineru插件，授信地址为：`http://host.docker.internal:5001`，类型本地部署，密码不填。
+	
+
