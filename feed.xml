@@ -5,8 +5,8 @@
     <description>这里是我一的个人小品文集，与你一起发现不一样的世界 | 要做一个好奇的思考者</description>
     <link>https://www.guanyugang.space/</link>
     <atom:link href="https://www.guanyugang.space/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 09 Aug 2025 12:35:46 +0000</pubDate>
-    <lastBuildDate>Sat, 09 Aug 2025 12:35:46 +0000</lastBuildDate>
+    <pubDate>Sat, 09 Aug 2025 13:19:55 +0000</pubDate>
+    <lastBuildDate>Sat, 09 Aug 2025 13:19:55 +0000</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
     
       <item>
@@ -109,6 +109,50 @@ docker run -it -p 17777:8000 mineru-api
         <guid isPermaLink="true">https://www.guanyugang.space/2025/06/01/mineru/</guid>
         
         <category>DIFY</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>到灯塔去（To the Lighthouse）</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;读后感&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/reading/lighthouse.jpg&quot; alt=&quot;To the lighthouse&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;感言——&lt;/strong&gt;语言，是心灵的驿站，更是存在之家。这里不仅有沉寂似墨的夜、飘零如萤的叶、狂暴不安的浪、顽皮灵动的气，还有变幻莫测的人生、灯下相伴的母亲、沁人心扉的呼唤、窸窸窣窣的裙裾，零碎的记忆、情感和体验被捕捉、被编织、被再现，演绎出了一部正——反——合题的三段曲式。“此中有真意，欲辩已忘言，”小境绘出了大境，融天地、宇宙、思想于一体，语言的领地扩张到了极致。忽然，好想重读一遍《追寻逝去的时光》第一卷。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;译文摘录&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;秋天的树在黄色的月光下闪着微光，在满月的光辉里，这微光催熟耕作的活力，捋平稻麦的残茬，并带来海浪拍打海岸，给它染上一片蓝色。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;为什么这么多年过去，那个情景又会再现；而且会这么完整、清晰、纤毫毕现，而在它之前和在它之后的经历，却是茫茫一片广袤的空白呢？&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;它的表面应该是美丽鲜艳、轻盈纤细的，色彩像蝴蝶翅膀上的颜色一样互相柔和地交融；但是它的深层结构必须是铁打钢铸般坚定。它柔软得轻轻一吹就会起皱；同时又那么坚韧，千军万马也难撼动。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;沉默不语不是更能表达自己？至少那一刻显得无比充实。她在海滩上捣出一个小坑，又用沙子把它盖上，仿佛将这完美的瞬间埋藏其中。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;她美得惊人，正如威廉所说。但是美并不能代表一切。美有它的缺憾—它来得太容易，它来得太完全。它使生活凝固—冻结了。它使人忘却内心的小小骚动：兴奋的红晕、悲哀的苍白，一些怪异的扭曲和一些光与影的变幻，这些会使那张脸一时间难以辨认，却多了一种让人永世难忘的韵味。在美的掩盖下，自然很容易粉饰这一切。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;当你旅行归来或久病初愈，还没有步入习惯的轨迹，也会有这种如梦似幻的感觉，令人恐怖：总感到有什么东西隐隐浮现。这时生活便格外生气盎然。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sat, 01 Feb 2025 12:00:00 +0000</pubDate>
+        <link>https://www.guanyugang.space/2025/02/01/To-The-Lighthouse/</link>
+        <guid isPermaLink="true">https://www.guanyugang.space/2025/02/01/To-The-Lighthouse/</guid>
+        
+        <category>读书</category>
         
         
       </item>
@@ -339,47 +383,6 @@ docker run -it -p 17777:8000 mineru-api
         <guid isPermaLink="true">https://www.guanyugang.space/2021/12/16/wujinzi/</guid>
         
         <category>游记</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>记忆点滴</title>
-        <description>&lt;blockquote&gt;
-  &lt;p&gt;记忆点滴&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;少年，你们在寻什么？是秘密卡点、湖光山色？还是友爱、亲情？甚至于欢笑和希望？而我，却踏入另一旅程，去追忆似水年华。&lt;/p&gt;
-
-&lt;p&gt;人生似乎漫漫，但可追忆者渺渺，缩成断续片段，绝大多数早已遗落，无处寻迹。每念此，徒叹人生的短暂和虚无。&lt;/p&gt;
-
-&lt;p&gt;年少之人，不喜回忆，憧憬未来；年老之人，总爱回忆，留足过去。而人过中年，生命的天平便渐渐向着过去倾斜，难免要追忆。正如溺水之人渴望边岸，唯抓取痛苦、快乐的记忆，方可与时间抗争，抚慰那久久劳顿疲乏的心。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/jiyi.jpg&quot; alt=&quot;记忆跳跃&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;进入记忆的场所，宛如来到一废弃的古城，残垣断壁随处可见，枯枝败叶沙沙微响，神秘的声音窃窃私语，大地陷入一片黑暗。那暗中腾起的星点火花，尤为显目，忽明忽暗、时燃时熄，小如萤火，大如篝火，跳闪着五颜六色，映照着模糊四周。如近看，焰中隐隐浮现往事，或琐碎的、或简单的、或无足的、或重要的；如远瞰，火花点点贯成千百条线，汇成生命的河流。&lt;/p&gt;
-
-&lt;p&gt;这河流，赋予你一切意义，它就是你的存在，那唯一真实的此在！&lt;/p&gt;
-
-&lt;p&gt;我去寻那尽头的火花。我来到河边，水面光洁似镜，一望无边，反射着黑曜石般的淡淡光泽。天空漆黑如墨，徐徐沉入河面，连成一体。周围一片沉寂。我心止如泓，一头坠入河中。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/jiyi1.jpg&quot; alt=&quot;记忆湖水&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;生命的本源向我敞开。那是一片混沌，没有意义，过去、现在和未来三者合一，脱离表象，化为本质，成为永恒的绵延和起伏。这是 “本体”的世界，即“道”的天地，存在与非在同一，“一”就是“多”，“我”就是“他”，无处不变化无穷，无处不纯粹单一，天堑成为通途，尽头就在咫尺。&lt;/p&gt;
-
-&lt;p&gt;我随心而动，延绵断裂了，旋动、翻转、褶皱于“生命之树”，绽放出“生命之花”。于是，过去、现在和未来再次分开，无形幻为有形，重拾经验和现象，存在产生了意义。此刻，一点火花，燃在心头，晶莹剔透，温润如玉，弱的几近湮灭，强的渗透一切。这尽头的光——出现了。&lt;/p&gt;
-
-&lt;p&gt;那是藏在巷子深处的某间小屋。一天夜晚，电闪雷鸣，大风吹得门框咣当咣当地响着，雨点豆子般地打在窗上。室内烛光柔和，人影晃动，安乐而静谧。最惬意的，莫过于能与外界隔绝，远离可怕的黑暗，缩成一团，埋进被窝，心头记挂着什么，又像啥也没记住。耳边隐隐传来母亲的细语，暖洋洋的，迷糊糊的。不知不觉就睡了，梦得很沉……&lt;/p&gt;
-
-&lt;div align=&quot;right&quot;&gt;二〇二一年十二月七日  南京&lt;/div&gt;
-</description>
-        <pubDate>Tue, 07 Dec 2021 12:00:00 +0000</pubDate>
-        <link>https://www.guanyugang.space/2021/12/07/jiyi/</link>
-        <guid isPermaLink="true">https://www.guanyugang.space/2021/12/07/jiyi/</guid>
-        
-        <category>游记</category>
-        
-        <category>随想</category>
         
         
       </item>
