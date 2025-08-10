@@ -186,7 +186,7 @@
     Multi-line snackbar height: 80 dp
     Text: Roboto Regular 14 sp
     Action button: Roboto Medium 14 sp, all-caps text
-    Default background fill: #323232 100%
+    Default background fill: #323232 100%  
   */
     left: 0px;
     right: 0px;
@@ -214,7 +214,7 @@
   width: 160px;
   overflow: hidden;
   user-select: none;
-  color: #000000;
+  color: #000;
   text-transform: uppercase;
   border-radius: 3px;
   outline-color: #a3a3a3;
@@ -231,7 +231,7 @@
   height: 100%;
   /*font-family: 'Roboto';*/
   font-size: 1em;
-  color: #000000;
+  color: #000;
   text-transform: uppercase;
 }
 .paper-button.colored,
@@ -264,13 +264,13 @@ button.paper-button {
   /*font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;*/
   font-size: 1em;
   line-height: 25px;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 .paper-button input[type="submit"] {
   outline-color: #a3a3a3;
 }
 .paper-button.colored.raised-button input[type="submit"] {
-  color: #ffffff;
+  color: #fff;
 }
 /** Shadows **/
 .paper-shadow-animated.paper-shadow {
@@ -1488,11 +1488,11 @@ img::-moz-selection {
   }
 }
 #tag-heading {
-  padding: 85px 0 55px;
+  padding: 70px 0 60px;
 }
 @media only screen and (min-width: 768px) {
   #tag-heading {
-    padding: 150px 0;
+    padding: 55px 0;
   }
 }
 #tag_cloud {
@@ -1609,6 +1609,17 @@ img::-moz-selection {
   .mini-post-list .post-preview .post-meta {
     font-size: 18px;
   }
+}
+.mini-post-list .row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.mini-post-list .col-md-6 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.mini-post-list .clearfix {
+  clear: both;
 }
 /* Tags support End*/
 /* Hux make all img responsible in post-container */
