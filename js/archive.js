@@ -115,6 +115,34 @@ https://github.com/kitian616/jekyll-TeXt-theme
 
       hasInit || ($result.removeClass('d-none'), hasInit = true);
 
+      // 修正单列显示逻辑：修改外层容器col-md-6而不是内层item
+      for (i = 0; i < sectionArticles.length; i++) {
+        if (result[i]) {
+          var visibleCount = 0;
+          var $visibleContainer = null;
+          
+          for (j = 0; j < sectionArticles[i].length; j++) {
+            if (result[i][j]) {
+              visibleCount++;
+              // 获取外层的col-md-6容器
+              $visibleContainer = sectionArticles[i].eq(j).closest('.col-md-6');
+            }
+          }
+          
+          // 如果只有一篇文章可见，调整为全宽
+          if (visibleCount === 1 && $visibleContainer && $visibleContainer.length > 0) {
+            $visibleContainer.removeClass('col-md-6').addClass('col-md-12');
+          } else {
+            // 恢复原始布局 - 找到所有可见的文章容器
+            for (j = 0; j < sectionArticles[i].length; j++) {
+              if (result[i] && result[i][j]) {
+                var $container = sectionArticles[i].eq(j).closest('.col-md-12, .col-md-6');
+                $container.removeClass('col-md-12').addClass('col-md-6');
+              }
+            }
+          }
+        }
+      }
 
       if (target) {
         buttonFocus(target);
