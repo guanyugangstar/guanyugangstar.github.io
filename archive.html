@@ -45,17 +45,21 @@ https://github.com/kitian616/jekyll-TeXt-theme
 	{%- assign _tags = '' -%}
 	{%- for _tag in _article.tags -%}
 	{%- assign _tag_encode = _tag | strip | url_encode -%}
-	{%- if forloop.last -%}
-	{%- assign _tags = _tags | append: _tag_encode -%}
+	{%- if forloop.first -%}
+		{%- assign _tags = _tags | append: _tag_encode -%}
 	{%- else -%}
-	{%- assign _tags = _tags | append: _tag_encode | append: ',' -%}
+		{%- assign _tags = _tags | append: ',' | append: _tag_encode -%}
 	{%- endif -%}
 	{%- endfor -%}
 
 	{% comment %} group by year {% endcomment %}
 	{%- assign _currentdate = _article.date | date: '%Y' -%}
 	{%- if _currentdate != _date -%}
-	{%- unless forloop.first -%}</section>{%- endunless -%}
+	{%- unless forloop.first -%}
+		</div>
+		<div class="clearfix"></div>
+	</section>
+	{%- endunless -%}
 	<section>
 		<span class="fa listing-seperator">
 			<span class="tag-text">{{ _currentdate }}</span>
@@ -82,7 +86,8 @@ https://github.com/kitian616/jekyll-TeXt-theme
 		{%- if forloop.last -%}
 		</div>
 		<div class="clearfix"></div>
-	</section>{%- endif -%}
+	</section>
+	{%- endif -%}
 	{% endfor %}
 </div>
 
