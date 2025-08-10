@@ -41,7 +41,6 @@ https://github.com/kitian616/jekyll-TeXt-theme
 	{%- assign _sorted_list = _sorted_list | sort: 'date' -%}
 	{%- assign _sorted_list = _sorted_list | reverse -%}
 
-
 	{%- for _article in _sorted_list -%}
 	{%- assign _tags = '' -%}
 	{%- for _tag in _article.tags -%}
@@ -57,11 +56,12 @@ https://github.com/kitian616/jekyll-TeXt-theme
 	{%- assign _currentdate = _article.date | date: '%Y' -%}
 	{%- if _currentdate != _date -%}
 	{%- unless forloop.first -%}</section>{%- endunless -%}
-	<section class="row">
+	<section>
 		<span class="fa listing-seperator">
 			<span class="tag-text">{{ _currentdate }}</span>
 		</span>
 		{%- assign _date = _currentdate -%}
+		<div class="row">
 		{%- endif -%}
 
 		<div class="col-md-6">
@@ -80,6 +80,7 @@ https://github.com/kitian616/jekyll-TeXt-theme
 			</div>
 		</div>
 		{%- if forloop.last -%}
+		</div>
 		<div class="clearfix"></div>
 	</section>{%- endif -%}
 	{% endfor %}
