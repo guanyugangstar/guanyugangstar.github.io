@@ -5,17 +5,116 @@
     <description>这里是我一的个人小品文集，与你一起发现不一样的世界 | 要做一个好奇的思考者</description>
     <link>https://www.guanyugang.space/</link>
     <atom:link href="https://www.guanyugang.space/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 11 Aug 2025 06:21:05 +0000</pubDate>
-    <lastBuildDate>Mon, 11 Aug 2025 06:21:05 +0000</lastBuildDate>
+    <pubDate>Mon, 11 Aug 2025 08:01:36 +0000</pubDate>
+    <lastBuildDate>Mon, 11 Aug 2025 08:01:36 +0000</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
     
       <item>
-        <title>Dify Case Censor Sys</title>
-        <description>
+        <title>文件/合同审查系统（Flask+Dify）</title>
+        <description>&lt;h1 id=&quot;文件合同审查系统flaskdify&quot;&gt;文件/合同审查系统（Flask+Dify）&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/guanyugangstar/Dify-case-censor-sys&quot;&gt;源码下载地址&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;项目简介&quot;&gt;项目简介&lt;/h2&gt;
+&lt;p&gt;本项目为基于Flask的全栈一体化文件/合同审查系统，支持文件上传、类型选择（文件审查/合同审查）、合同身份选择（甲方/乙方），并通过Dify API实现智能审核，结果实时展示。&lt;/p&gt;
+
+&lt;h2 id=&quot;主要功能&quot;&gt;主要功能&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;文件/合同上传与类型选择&lt;/li&gt;
+  &lt;li&gt;合同审查时支持甲方/乙方身份输入&lt;/li&gt;
+  &lt;li&gt;一次表单提交，后端自动串联Dify文件上传与工作流调用&lt;/li&gt;
+  &lt;li&gt;审核结果本地展示，无需持久化&lt;/li&gt;
+  &lt;li&gt;现代简约大方UI，苹果风格美化，响应式布局&lt;/li&gt;
+  &lt;li&gt;初审/复审结果分离独立展示，交互体验优化&lt;/li&gt;
+  &lt;li&gt;支持GitHub版本管理与回滚&lt;/li&gt;
+  &lt;li&gt;前端支持Markdown语法渲染，所有AI输出内容均可高亮显示&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;系统界面截图&quot;&gt;系统界面截图&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/censor_system.png&quot; alt=&quot;系统主界面&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;目录结构&quot;&gt;目录结构&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;censor_system/
+  app.py                # Flask主程序
+  templates/
+    index.html          # 前端表单页面
+  static/               # 静态资源目录（可选）
+  README.md             # 项目说明文档
+  requirements.txt      # 依赖包列表
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;安装与运行&quot;&gt;安装与运行&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;安装依赖
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;pip &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; requirements.txt
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;配置Dify API Token（推荐用环境变量）
+    &lt;ul&gt;
+      &lt;li&gt;Windows:
+        &lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;DIFY_API_TOKEN&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot; 你的Dify API Token&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Linux/macOS:
+        &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;DIFY_API_TOKEN&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;你的Dify API Token&quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;启动服务
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;python app.py
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;访问
+    &lt;ul&gt;
+      &lt;li&gt;打开浏览器访问 127.0.0.1:5050&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;依赖环境&quot;&gt;依赖环境&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Python 3.7+&lt;/li&gt;
+  &lt;li&gt;Flask&lt;/li&gt;
+  &lt;li&gt;requests&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;注意事项&quot;&gt;注意事项&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Dify API Token请妥善保管，避免泄露。&lt;/li&gt;
+  &lt;li&gt;文件上传大小、类型受Dify官方API限制。&lt;/li&gt;
+  &lt;li&gt;本系统仅作演示用途，未做持久化与安全加固。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;特色亮点&quot;&gt;特色亮点&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;现代简约风格UI，圆角卡片、阴影、舒适配色，兼容移动端&lt;/li&gt;
+  &lt;li&gt;初审结果与复审结果分为独立卡片，交互清晰&lt;/li&gt;
+  &lt;li&gt;审核进度实时反馈，用户体验友好&lt;/li&gt;
+  &lt;li&gt;支持GitHub远程仓库，便于团队协作与历史回滚&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;联系与反馈&quot;&gt;联系与反馈&lt;/h2&gt;
+&lt;p&gt;如有问题或建议，请联系开发者。&lt;/p&gt;
 </description>
-        <pubDate>Mon, 11 Aug 2025 00:00:00 +0000</pubDate>
+        <pubDate>Mon, 11 Aug 2025 12:00:00 +0000</pubDate>
         <link>https://www.guanyugang.space/2025/08/11/DIFY-case-censor-sys/</link>
         <guid isPermaLink="true">https://www.guanyugang.space/2025/08/11/DIFY-case-censor-sys/</guid>
+        
+        <category>AI编程</category>
+        
+        <category>DIFY</category>
         
         
       </item>

@@ -82,7 +82,7 @@
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div id="huxblog_navbar">
+            <div id="guanblog_navbar">
                 <div class="navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
@@ -132,7 +132,7 @@
         // in high-perf jank-free CSS3 implementation
         var $body = document.body;
         var $toggle = document.querySelector('.navbar-toggle');
-        var $navbar = document.querySelector('#huxblog_navbar');
+        var $navbar = document.querySelector('#guanblog_navbar');
         var $collapse = document.querySelector('.navbar-collapse');
 
         var __HuxNav__ = {
@@ -248,18 +248,32 @@
 <div class="post-preview">
     <a href="/2025/08/11/DIFY-case-censor-sys/">
         <h2 class="post-title">
-            Dify Case Censor Sys
+            文件/合同审查系统（Flask+Dify）
         </h2>
+        
+        <h3 class="post-subtitle">
+            文件/合同审查系统，支持智能审核，结果实时展示
+        </h3>
         
         <div class="post-content-preview">
             
-                
+                文件/合同审查系统（Flask+Dify）
+源码下载地址
 
+项目简介
+本项目为基于Flask的全栈一体化文件/合同审查系统，支持文件上传、类型选择（文件审查/合同审查）、合同身份选择（甲方/乙方），并通过Dify API实现智能审核，结果实时展示。
+
+主要功能
+
+  文件/合同上传与类型选择
+  合同审查时支持甲方/乙方身份输入
+  一次表单提交，后端自动串联Dify文件上传与工作流调用
+ ...
             
         </div>
     </a>
     <p class="post-meta">
-        Posted by Guan Essays on August 11, 2025
+        Posted by Guan on August 11, 2025
     </p>
 </div>
 <hr>

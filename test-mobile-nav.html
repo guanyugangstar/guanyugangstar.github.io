@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>移动端导航栏测试</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .test-info {
+            background: #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .test-steps {
+            background: #e8f4f8;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        @media (max-width: 767px) {
+            .mobile-only {
+                display: block;
+                color: #0085a1;
+                font-weight: bold;
+            }
+        }
+        @media (min-width: 768px) {
+            .mobile-only {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>移动端导航栏测试页面</h1>
+    
+    <div class="test-info">
+        <h3>修复说明：</h3>
+        <p>问题：移动端导航栏每次进入页面时自动展开，应该是点击才展开</p>
+        <p>原因：HTML中导航栏ID与CSS中定义的ID不匹配</p>
+        <p>修复：将ID从"huxblog_navbar"改为"guanblog_navbar"以匹配CSS样式</p>
+    </div>
+
+    <div class="test-steps">
+        <h3>测试步骤：</h3>
+        <ol>
+            <li>使用移动设备或浏览器开发者工具模拟移动端（宽度≤767px）</li>
+            <li>刷新页面</li>
+            <li>验证导航栏默认是隐藏状态</li>
+            <li>点击导航按钮验证可以正常展开/收起</li>
+        </ol>
+    </div>
+
+    <div class="mobile-only">
+        ⚡ 当前处于移动端模式，可以测试导航栏行为
+    </div>
+
+    <p>
+        <a href="http://localhost:4000">访问本地测试站点</a>
+    </p>
+</body>
+</html>
