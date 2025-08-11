@@ -5,9 +5,62 @@
     <description>这里是我一的个人小品文集，与你一起发现不一样的世界 | 要做一个好奇的思考者</description>
     <link>https://www.guanyugang.space/</link>
     <atom:link href="https://www.guanyugang.space/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 10 Aug 2025 14:20:54 +0000</pubDate>
-    <lastBuildDate>Sun, 10 Aug 2025 14:20:54 +0000</lastBuildDate>
+    <pubDate>Mon, 11 Aug 2025 06:02:31 +0000</pubDate>
+    <lastBuildDate>Mon, 11 Aug 2025 06:02:31 +0000</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>N8N的Docker启动命令</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;N8N的docker启动命令&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;docker run -d `
+  -e GENERIC_TIMEZONE=Asia/Shanghai `
+  --add-host=host.docker.internal:host-gateway `
+  --name n8n `
+  -p 5678:5678 `
+  -v n8n_data:/home/node/.n8n `
+  -v D:\docker\n8n_files:/home/node/Files `
+  -e N8N_DEFAULT_LOCALE=zh-CN `
+  -e N8N_SECURE_COOKIE=false `
+  -e DB_TYPE=postgresdb `
+  -e DB_POSTGRESDB_HOST=host.docker.internal `
+  -e DB_POSTGRESDB_PORT=5432 `
+  -e DB_POSTGRESDB_DATABASE=n8n `
+  -e DB_POSTGRESDB_USER=postgres `
+  -e DB_POSTGRESDB_PASSWORD=××××× `
+  n8nio/n8n:latest
+
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;注意：&lt;/strong&gt;环境变量&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;N8N_SECURE_COOKIE=false&lt;/code&gt;，可以访问HTTP协议。&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 01 Jun 2025 12:00:00 +0000</pubDate>
+        <link>https://www.guanyugang.space/2025/06/01/n8n-startup/</link>
+        <guid isPermaLink="true">https://www.guanyugang.space/2025/06/01/n8n-startup/</guid>
+        
+        <category>N8N</category>
+        
+        
+      </item>
     
       <item>
         <title>Mineru本地安装要点</title>
@@ -346,43 +399,6 @@ docker run -it -p 17777:8000 mineru-api
         <category>游记</category>
         
         <category>随想</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>吴敬梓纪念馆游记</title>
-        <description>&lt;blockquote&gt;
-  &lt;p&gt;吴敬梓纪念馆游记&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;知识分子对现存制度的批评，东西方是大不同的。西方人认为这是当然的权利，东方人则当作是应尽的责任。吴敬梓，深受儒家熏陶和浸染，却甘为一名知识界的“牛虻”，赶在了时代的前头。他，试图捍卫理想，几经磨砺，摒弃了仕途。也正因此，使他拥有了批评的权利，以笔为器，针砭时弊，赋予其作品非凡的魅力，成就传世之作——《儒林外史》。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/wujinzi.jpg&quot; alt=&quot;吴敬梓纪念馆&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;吴敬梓纪念馆，于一九九七年复建，坐落东关头路，背倚秦淮河，地处闹市，是一处清朗之地。馆的规模不大，前后一进，南北朝向，左右偏房，平面布局呈“凹”字形。主体建筑为一层砖木结构，檐口平挑，白墙灰瓦，雕镂半窗，具有典型的清代民居风格。馆内藏吴敬梓生平、著作及研究等资料，略显单薄。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/wujinzi2.jpg&quot; alt=&quot;吴敬梓纪念馆&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;馆周有东西两庭院，曲径通幽，落叶蔽路；拙石倚树，亭廊临水；内立若干雕塑小品，可谓一景或悠然，一境或野趣。寒冬腊月，天色苍茫，坐西亭之中，赏枝叶扶苏、听风声簌簌，身畔的秦淮河水静静地流着，碧如玉，凝似浆，流过多少往事！不禁遥想三百年前，夜深宁静，灯火阑珊，阶前冬草，四壁虫声。此时，窗下一消瘦身影，坐于案边，面容清癯，脸色苍白，时而把酒小酌，时而捧经吟诵，时而拂须沉思，时而奋笔疾书，如此，一晃过了二十年。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/wujinzi1.jpg&quot; alt=&quot;吴敬梓纪念馆&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;吴敬梓，是骄傲的。相传他自幼饱读诗书，才思敏捷，时常纵情悖礼、放浪不羁，养成一身傲骨。成年后，遭家道中落，仕途之路屡屡受挫，遂变得淡泊名利，知趣高雅，未参加高官举荐的廷试，饱尝生活艰辛，晚年落魄而终。纵观其生，如果说，美德如香料，碾碎焚烧时最香，那么，坎坷的命运成就了吴敬梓的傲霜之美。他的傲，宛如院中的老杨树，六株成群，环抱而立，虽叶已尽落，但形态舒张，枝干遒劲，呈擎天不屈之势，令人称奇。&lt;/p&gt;
-
-&lt;p&gt;吴敬梓，是寂寞的。身为江南文士之首，他交友甚广，常邀三五好友，从事户外活动，据说性格洒脱、豪爽。然而，琴棋书画、觥筹交错之际，又有几人曾像他，经历人生跌宕起伏，从大富大贵沦至以书换米；又有几人曾像他，满腹经纶，恃才自傲，却被命运所捉弄，逢考则败，屡试不中。我想，他的内心必然是苦闷的、寂寞的。酒，便成了他不离不弃的真心朋友，心中的悲凉和郁闷，惟在作品中得以宣泄。如今，故人早逝，院内凄风萧萧，游人渺渺。&lt;/p&gt;
-
-&lt;p&gt;吴敬梓，是鲜活的。身处酱缸文化，他对陈腐的科举制度深恶痛绝，极尽辛辣讽刺之能。平心而论，科举制度既是治国理政的良方，也能成为阻碍进步的毒药。在我国，科举虽已被历史淘汰，但选人用人的机制仍延续至今，最终转型为高考制度，不再限于服务政治，转变为各行业的人才选拔，这是一大进步。问题是，在一个缺乏财富机会的社会，倘若普通人家子女唯上名牌大学才有前途，那么，激烈竞争下，最终损害的，必然是社会的包容度和创造力。更有甚者，“进体制”成为当下潮流，高考升级为体制考，大量优秀人才消耗在体制内，明显是时代退步了。而那些落榜生，便成了现代的“吴敬梓”，深陷阶层固化的泥潭，或挣扎，或徘徊，或躺平，前途渺渺，无法自拔。&lt;/p&gt;
-
-&lt;p&gt;有人说，无论贫贱富贵、地位高下，每个自由的个体都应当有选择更美好生活的权利，那么，“吴敬梓”们的希望又在哪里呢？&lt;/p&gt;
-
-&lt;div align=&quot;right&quot;&gt;二〇二一年十二月十六日  南京&lt;/div&gt;
-</description>
-        <pubDate>Thu, 16 Dec 2021 12:00:00 +0000</pubDate>
-        <link>https://www.guanyugang.space/2021/12/16/wujinzi/</link>
-        <guid isPermaLink="true">https://www.guanyugang.space/2021/12/16/wujinzi/</guid>
-        
-        <category>游记</category>
         
         
       </item>
