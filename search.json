@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Dify Case Censor Sys",
+      "subtitle" : "",
+      "tags"     : "",
+      "url"      : "/2025/08/11/DIFY-case-censor-sys/",
+      "date"     : "2025-08-11 00:00:00 +0000"
+    } ,
+  
+    {
       "title"    : "N8N的Docker启动命令",
       "subtitle" : "N8N技巧",
       "tags"     : "N8N",
