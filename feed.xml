@@ -5,17 +5,63 @@
     <description>这里是我一的个人小品文集，与你一起发现不一样的世界 | 要做一个好奇的思考者</description>
     <link>https://www.guanyugang.space/</link>
     <atom:link href="https://www.guanyugang.space/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 12 Aug 2025 09:17:26 +0000</pubDate>
-    <lastBuildDate>Tue, 12 Aug 2025 09:17:26 +0000</lastBuildDate>
+    <pubDate>Tue, 12 Aug 2025 09:45:59 +0000</pubDate>
+    <lastBuildDate>Tue, 12 Aug 2025 09:45:59 +0000</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
     
       <item>
-        <title>Zhenli</title>
-        <description>
+        <title>论真理</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;论真理&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;无论何种知识，成为真理的本质不在于内容，而在于对其内容的确信。这个确信是人类社会共同体层面的确信，真的程度，即确信大小，取决于它在实践中的应用。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/zhenli1.png&quot; alt=&quot;真理&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;真理是人类才具有的概念。抛开人的因素，真理将失去一切意义。真理是公意的一致，个人因素和真理没有直接关联。共同体构成了真理的必要条件，而共同体对概念和命题的认同和维系，则构成了真理的充要条件。&lt;/p&gt;
+
+&lt;p&gt;确信的大小，取决于知识在自然实践中不仅有用，而且还具有取得成功的普适性。知识的内涵越小，普适性越大；内涵越大，普适性越小。逻辑和数学定理具有纯形式上的普适性，但是正因为它们在实践中的可能应用，才成其为真理，甚至为真理的真理。否则，只是无意义的同语反复。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/zhenli2.png&quot; alt=&quot;真理&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;真理是有条件的。不同的共同体具有不同的公意标准，产生的真理观是有差异的。即使同一个共同体，在不同的历史阶段和物质条件下，真理观也不是一成不变的。严格意义上，只有相对的真理，没有绝对的真理。&lt;/p&gt;
 </description>
-        <pubDate>Tue, 12 Aug 2025 00:00:00 +0000</pubDate>
-        <link>https://www.guanyugang.space/2025/08/12/zhenli/</link>
-        <guid isPermaLink="true">https://www.guanyugang.space/2025/08/12/zhenli/</guid>
+        <pubDate>Mon, 11 Aug 2025 12:00:00 +0000</pubDate>
+        <link>https://www.guanyugang.space/2025/08/11/zhenli/</link>
+        <guid isPermaLink="true">https://www.guanyugang.space/2025/08/11/zhenli/</guid>
+        
+        <category>随想</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>白痴（Идиот）</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;读后感&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/reading/idiot.jpg&quot; alt=&quot;Идиот&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;感言——&lt;/strong&gt;陀氏的笔头就像检测心灵的x光仪，洞穿人心的幽暗难测。一个个鲜明的形象，留给感兴趣的读者去反复琢磨和洞悉，往往能从中多少依稀辨出自己的一些影子。要想完全破译这位心灵写手的神秘密码，无疑是在解答一道高阶多元的随机微分方程，哪怕不能完全说无解，至少也是需要颇费巨力的。人心不仅是对他人，甚至是对自己也是遮蔽着的。&lt;/p&gt;
+
+&lt;p&gt;昨天看到一则新闻，某店长期免费供包子给一老妇。一日，老妇嫌手中包子汁少，想换一个。店员未给，老妇一怒下将手中包子砸了过去。人的心灵啦！不正是情节的现实版吗？我要说:这一砸，砸的好！砸出了一个真正的“人”。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;译文摘录&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;问题在于生命，仅仅在于生命，——在于发现生命的这个不间断和无休止的过程，而完全不在于发现本身！&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Mon, 11 Aug 2025 12:00:00 +0000</pubDate>
+        <link>https://www.guanyugang.space/2025/08/11/idiot/</link>
+        <guid isPermaLink="true">https://www.guanyugang.space/2025/08/11/idiot/</guid>
+        
+        <category>读书</category>
         
         
       </item>
@@ -435,33 +481,6 @@ docker run -it -p 17777:8000 mineru-api
         <pubDate>Wed, 01 Jan 2025 12:00:00 +0000</pubDate>
         <link>https://www.guanyugang.space/2025/01/01/ziwo/</link>
         <guid isPermaLink="true">https://www.guanyugang.space/2025/01/01/ziwo/</guid>
-        
-        <category>随想</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>我的世界观</title>
-        <description>&lt;blockquote&gt;
-  &lt;p&gt;我的世界观&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;（一）从本源看，凡物存在，必有原因，无限追溯，直至因自而存在的“一”。“一”是混沌，蕴含着各种可能元素，如时间元素、空间元素和精神元素。这些元素无差别混同为无定型的根元。&lt;br /&gt;
-&lt;strong&gt;反驳&lt;/strong&gt;：按此逻辑，也可推至自因存在的“二”、“三”、“四”乃至“无限多”。&lt;br /&gt;
-&lt;strong&gt;辩驳&lt;/strong&gt;：因先天统觉的自明性，“二”、“三”乃至“无限多”均可归为“一”。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/shijieguan1.png&quot; alt=&quot;世界观&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;（二）从现象看，世界为“三”，包括时间、空间和精神。“时间”为内在领域，分为过去、现在和将来三部分；“空间”为外在领域，由长、宽、高构成；“精神”为超越领域，分化为自我意识、类我意识和非类我意识。物质是各种元素共同作用的空间表象，时间是各种元素共同作用的绵延表象，生命是各种元素共同作用的精神现象。绵延是粘连物质和生命的胶合剂。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/shijieguan2.png&quot; alt=&quot;世界观&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;（三）“一”通过自性“二”，外显为“三”。“一”内秉“二”，是绝对的冲动，表现为冲突、斗争、分化，为世界提供永恒的动力，各种元素外显为“三”，依此推及，产生无穷的变化。“三”通过绵延交织成为“一”：过去、现在和将来交织为整体到时；单独的长、宽、高无法脱离一个空间去想象；最神秘的世界精神也是自我、类我和非类我的混成。世界根植于“一”。&lt;/p&gt;
-</description>
-        <pubDate>Wed, 01 Jan 2025 12:00:00 +0000</pubDate>
-        <link>https://www.guanyugang.space/2025/01/01/shijie/</link>
-        <guid isPermaLink="true">https://www.guanyugang.space/2025/01/01/shijie/</guid>
         
         <category>随想</category>
         

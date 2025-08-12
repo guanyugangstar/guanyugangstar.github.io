@@ -12,28 +12,17 @@
 
     <!-- Open Graph -->
     <meta property="og:title"
-        content="N8N的Docker启动命令 - 我一的品集 | Guan Essays">
+        content="我一的品集 | Guan Essays">
     
-    <meta property="og:type" content="article">
-    <meta property="og:description" content="
-  N8N的docker启动命令
-
-">
-    
-    <meta property="article:published_time" content=" 2025-06-01T12:00:00Z">
-    
-    
-    <meta property="article:author" content="Guan">
-    
-    
-    <meta property="article:tag" content="N8N">
-    
+    <meta property="og:type" content="website">
+    <meta property="og:description"
+        content="「星空和道德 自在与自为」">
     
     <meta property="og:image" content="https://www.guanyugang.spacehttps://avatars.githubusercontent.com/u/200448896?s=400&u=b16f7aa0db655a59ea606bf964b97d12ac603e7e&v=4">
-    <meta property="og:url" content="https://www.guanyugang.space/2025/06/01/n8n-startup/">
+    <meta property="og:url" content="https://www.guanyugang.space/page3/">
     <meta property="og:site_name" content="我一的品集 | Guan Essays">
 
-    <title>N8N的Docker启动命令 - 我一的品集 | Guan Essays</title>
+    <title>我一的品集 | Guan Essays</title>
 
     <!-- Web App Manifest -->
     <link rel="manifest" href="/pwa/manifest.json">
@@ -42,7 +31,7 @@
     <link rel="shortcut icon" href="/img/favicon.ico">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://www.guanyugang.space/2025/06/01/n8n-startup/">
+    <link rel="canonical" href="https://www.guanyugang.space/page3/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href=" /css/bootstrap.min.css">
@@ -78,8 +67,8 @@
 
     <!-- Navigation -->
 
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top invert">
-    
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -210,11 +199,7 @@
   </div>
 </div>
 
-    <!-- Image to hack wechat -->
-<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
-<!-- <img src="/img/home-bg.jpg" width="0" height="0"> -->
-
-<!-- Post Header -->
+    <!-- Page Header -->
 
 
 
@@ -231,185 +216,89 @@
 
 
 
-<header class="intro-header style-text">
 
-    <div class="header-mask"></div>
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-heading">
-                    <div class="tags">
-                        
-                        <a class="tag" href="/archive/?tag=N8N" title="N8N">N8N</a>
-                        
-                    </div>
-                    <h1>N8N的Docker启动命令</h1>
-                    
-                    <h2 class="subheading">N8N技巧</h2>
-                    <span class="meta">Posted by Guan on June 1, 2025</span>
-                </div>
-            </div>
+
+
+<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
+  <div class="header-mask"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        
+        <div class="site-heading">
+        
+          <h1>Guan Essays</h1>
+          <span class="subheading">「星空和道德 自在与自为」</span>
         </div>
+      </div>
     </div>
+  </div>
 </header>
 
 
 
-
-
-
-
-<!-- Post Content -->
-<article>
-    <div class="container">
-        <div class="row">
-
-    <!-- Post Container -->
-            <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                post-container">
-
-                <!-- Multi-Lingual -->
-                
-
-				<blockquote>
-  <p>N8N的docker启动命令</p>
-</blockquote>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-</pre></td><td class="rouge-code"><pre>docker run -d `
-  -e GENERIC_TIMEZONE=Asia/Shanghai `
-  --add-host=host.docker.internal:host-gateway `
-  --name n8n `
-  -p 5678:5678 `
-  -v n8n_data:/home/node/.n8n `
-  -v D:\docker\n8n_files:/home/node/Files `
-  -e N8N_DEFAULT_LOCALE=zh-CN `
-  -e N8N_SECURE_COOKIE=false `
-  -e DB_TYPE=postgresdb `
-  -e DB_POSTGRESDB_HOST=host.docker.internal `
-  -e DB_POSTGRESDB_PORT=5432 `
-  -e DB_POSTGRESDB_DATABASE=n8n `
-  -e DB_POSTGRESDB_USER=postgres `
-  -e DB_POSTGRESDB_PASSWORD=××××× `
-  n8nio/n8n:latest
-
-</pre></td></tr></tbody></table></code></pre></div></div>
-<p><strong>注意：</strong>环境变量<code class="language-plaintext highlighter-rouge">N8N_SECURE_COOKIE=false</code>，可以访问HTTP协议。</p>
-
-
-
-                <hr style="visibility: hidden;">
-                <ul class="pager">
-                    
-                    <li class="previous">
-                        <a href="/2025/06/01/mineru/" data-toggle="tooltip" data-placement="top" title="Mineru本地安装要点">
-                        Previous<br>
-                        <span>Mineru本地安装要点</span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li class="next">
-                        <a href="/2025/08/11/DIFY-case-censor-sys/" data-toggle="tooltip" data-placement="top" title="文件/合同审查系统（Flask+Dify）">
-                        Next<br>
-                        <span>文件/合同审查系统（Flask+Dify）</span>
-                        </a>
-                    </li>
-                    
-                </ul>
-                <hr style="visibility: hidden;">
-
-                
-
-                
-
-                
-                <!-- valine 评论框 start -->
-                <div class="comment">
-                    <!-- valine 评论框 start -->
-<div id="comment"></div>
-<script src="https://unpkg.com/leancloud-storage@3/dist/av-min.js"></script>
-<script src='https://unpkg.com/valine@1/dist/Valine.min.js'></script>
-<script>window.LEANCLOUD_APP_ID="jfUnPyJru2EFYGWL3lWFsk6c-gzGzoHsz";window.LEANCLOUD_APP_KEY="q6k0uylUk1W93e69BClAcYZD";</script>
-
-<script>
-    // 尝试从全局变量获取LeanCloud凭证
-    var appId = window.LEANCLOUD_APP_ID || 'YOUR_LEANCLOUD_APP_ID';
-    var appKey = window.LEANCLOUD_APP_KEY || 'YOUR_LEANCLOUD_APP_KEY';
+<!-- Main Content -->
+<div class="container">
+  <div class="row">
     
-    // 如果appId仍然是默认值，则清空凭证
-    if (appId === 'YOUR_LEANCLOUD_APP_ID' || appId.indexOf('<%=') !== -1) {
-        appId = '';
-        appKey = '';
-    }
-    
-    new Valine({
-        el:'#comment',
-        appId: appId,
-        appKey: appKey,
-        notify:true,
-        verify:false,
-        avatar:'mm',
-        pageSize:10,
-        path: '/2025/06/01/n8n-startup/',
-        placeholder:'在这里写评论...'
-    });
-</script>
-<!-- valine 评论框 end -->
-                </div>
-                <!-- valine 评论框 end -->
+
+    <!-- USE SIDEBAR -->
+    <!-- PostList Container -->
+    <div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-12
+      col-xs-12 postlist-container">
+      
+<div class="post-preview">
+    <a href="/2021/10/26/mp/">
+        <h2 class="post-title">
+            东水关游记
+        </h2>
+        
+        <h3 class="post-subtitle">
+             游记随笔之一 
+        </h3>
+        
+        <div class="post-content-preview">
+            
                 
-            </div>  
+  东水关游记
 
-    <!-- Side Catalog Container -->
-        
-            <div class="
-                col-lg-2 col-lg-offset-0
-                visible-lg-block
-                sidebar-container
-                catalog-container">
-                <div class="side-catalog">
-                    <hr class="hidden-sm hidden-xs">
-                    <h5>
-                        <a class="catalog-toggle" href="#">CATALOG</a>
-                    </h5>
-                    <ul class="catalog-body"></ul>
-                </div>
-            </div>
-        
 
+十月的东水关，天色苍茫，夕阳斜落，金色的余晖洒落大地。古老的城墙遗迹孑然伫立着，砖色斑驳，透出古铜色的光泽，默默地昭示着百年沧桑。城墙根畔，垂柳成荫，草木旺盛，温柔的秦淮河静静地顺势伸向远方，婉转曲折，悠然回荡。一座五孔拱形大桥横踞河道，气势颇为雄浑，当地人称为”九龙桥”。相传，此桥为朱元璋所建，希望借助龙的神力镇住南京的风水。
+
+
+
+不远处，城东干道像一条巨龙纵贯南北...
+            
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Guan on October 26, 2021
+    </p>
+</div>
+<hr>
+
+
+<!-- Pager -->
+
+<ul class="pager">
+    
+    <li class="previous">
+        <a href="/page2">&larr; Newer Posts</a>
+    </li>
+    
+    
+</ul>
+
+
+    </div>
     <!-- Sidebar Container -->
-            <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                sidebar-container">
-
-                <!-- Featured Tags -->
-                
+    <div class="col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-12
+      col-xs-12 sidebar-container">
+      <!-- Featured Tags -->
+      
 
 
 <section>
-    
-        <hr class="hidden-sm hidden-xs">
     
     <h5><a href="/archive/">FEATURED TAGS</a></h5>
     <div class="tags">
@@ -432,56 +321,60 @@
 </section>
 
 
-                <!-- Friends Blog -->
-                
-            </div>
-        </div>
+      <!-- Short About -->
+      <section class="visible-md visible-lg">
+  <hr>
+  <h5><a href="/about/">ABOUT ME</a></h5>
+  <div class="short-about">
+    
+    <img src="https://avatars.githubusercontent.com/u/200448896?s=400&u=b16f7aa0db655a59ea606bf964b97d12ac603e7e&v=4" />
+    
+    
+    <p>要做一个好奇的思考者<br> guanyugangstar@outlook.com</p>
+    
+    <!-- SNS Link -->
+    
+
+
+<ul class="list-inline">
+
+
+  
+  
+  
+  <li>
+    <a target="_blank" href="https://www.zhihu.com/people/wo-yi-2">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa  fa-stack-1x fa-inverse">知</i>
+      </span>
+    </a>
+  </li>
+  
+  
+  
+  
+  <li>
+    <a target="_blank" href="https://github.com/guanyugangstar">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+  
+  
+</ul>
+  </div>
+</section>
+
+      <!-- Friends Blog -->
+      
     </div>
-</article>
+    
+  </div>
+</div>
 
-<!-- add support for mathjax by voleking-->
-
-
-
-
-
-
-
-
-
-<!-- async load function -->
-<script>
-    function async(u, c) {
-      var d = document, t = 'script',
-          o = d.createElement(t),
-          s = d.getElementsByTagName(t)[0];
-      o.src = u;
-      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
-      s.parentNode.insertBefore(o, s);
-    }
-</script>
-<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
-<script>
-    async("//cdnjs.cloudflare.com/ajax/libs/anchor-js/1.1.1/anchor.min.js",function(){
-        anchors.options = {
-          visible: 'hover',
-          placement: 'right',
-          // icon: '#'
-        };
-        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
-    })
-</script>
-<style>
-    /* place left on bigger screen */
-    @media all and (min-width: 800px) {
-        .anchorjs-link{
-            position: absolute;
-            left: -0.75em;
-            font-size: 1.1em;
-            margin-top : -0.1em;
-        }
-    }
-</style>
 
 
 
