@@ -5,9 +5,20 @@
     <description>这里是我一的个人小品文集，与你一起发现不一样的世界 | 要做一个好奇的思考者</description>
     <link>https://www.guanyugang.space/</link>
     <atom:link href="https://www.guanyugang.space/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 11 Aug 2025 08:01:36 +0000</pubDate>
-    <lastBuildDate>Mon, 11 Aug 2025 08:01:36 +0000</lastBuildDate>
+    <pubDate>Tue, 12 Aug 2025 09:17:26 +0000</pubDate>
+    <lastBuildDate>Tue, 12 Aug 2025 09:17:26 +0000</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>Zhenli</title>
+        <description>
+</description>
+        <pubDate>Tue, 12 Aug 2025 00:00:00 +0000</pubDate>
+        <link>https://www.guanyugang.space/2025/08/12/zhenli/</link>
+        <guid isPermaLink="true">https://www.guanyugang.space/2025/08/12/zhenli/</guid>
+        
+        
+      </item>
     
       <item>
         <title>文件/合同审查系统（Flask+Dify）</title>
@@ -451,25 +462,6 @@ docker run -it -p 17777:8000 mineru-api
         <pubDate>Wed, 01 Jan 2025 12:00:00 +0000</pubDate>
         <link>https://www.guanyugang.space/2025/01/01/shijie/</link>
         <guid isPermaLink="true">https://www.guanyugang.space/2025/01/01/shijie/</guid>
-        
-        <category>随想</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>哲思</title>
-        <description>&lt;blockquote&gt;
-  &lt;p&gt;哲思（引言）&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/zhesi.png&quot; alt=&quot;哲思&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;真正的哲思，是一种洞见，是直觉的认识，非科学论证、经验归纳和逻辑演绎。真正的哲思，是对人的感悟和认识。&lt;/p&gt;
-</description>
-        <pubDate>Wed, 01 Jan 2025 12:00:00 +0000</pubDate>
-        <link>https://www.guanyugang.space/2025/01/01/zhesi/</link>
-        <guid isPermaLink="true">https://www.guanyugang.space/2025/01/01/zhesi/</guid>
         
         <category>随想</category>
         

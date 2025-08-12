@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Zhenli",
+      "subtitle" : "",
+      "tags"     : "",
+      "url"      : "/2025/08/12/zhenli/",
+      "date"     : "2025-08-12 00:00:00 +0000"
+    } ,
+  
+    {
       "title"    : "文件/合同审查系统（Flask+Dify）",
       "subtitle" : "文件/合同审查系统，支持智能审核，结果实时展示",
       "tags"     : "AI编程, DIFY",
