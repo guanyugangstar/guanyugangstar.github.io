@@ -5,12 +5,12 @@
     <description>这里是我一的个人小品文集，与你一起发现不一样的世界 | 要做一个好奇的思考者</description>
     <link>https://www.guanyugang.space/</link>
     <atom:link href="https://www.guanyugang.space/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 15 Aug 2025 14:22:43 +0000</pubDate>
-    <lastBuildDate>Fri, 15 Aug 2025 14:22:43 +0000</lastBuildDate>
+    <pubDate>Fri, 15 Aug 2025 14:37:50 +0000</pubDate>
+    <lastBuildDate>Fri, 15 Aug 2025 14:37:50 +0000</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
     
       <item>
-        <title>喧哗与骚动（The Sound and the Fury）</title>
+        <title>喧哗与骚动（The Sound and the Fury）——[美]威廉·福克纳</title>
         <description>&lt;blockquote&gt;
   &lt;p&gt;读后感&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -89,7 +89,7 @@
       </item>
     
       <item>
-        <title>白痴（Идиот）</title>
+        <title>白痴（Идиот）——[俄]陀思妥耶夫斯基</title>
         <description>&lt;blockquote&gt;
   &lt;p&gt;读后感&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -386,7 +386,7 @@ docker run -it -p 17777:8000 mineru-api
       </item>
     
       <item>
-        <title>到灯塔去（To the Lighthouse）</title>
+        <title>到灯塔去（To the Lighthouse）——[英]弗吉尼亚·伍尔夫</title>
         <description>&lt;blockquote&gt;
   &lt;p&gt;读后感&lt;/p&gt;
 &lt;/blockquote&gt;
