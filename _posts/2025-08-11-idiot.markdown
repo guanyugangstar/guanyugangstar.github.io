@@ -1,9 +1,9 @@
 ---
 layout:     post
-title:      "白痴（Идиот）"
+title:      "白痴（Идиот）——[俄]陀思妥耶夫斯基"
 subtitle:   "我的读书"
 date:       2025-08-11 12:00:00
-author:     "[俄]陀思妥耶夫斯基"
+author:     "Guan"
 header-style: text
 catalog: true
 tags:

@@ -1,9 +1,9 @@
 ---
 layout:     post
-title:      "到灯塔去（To the Lighthouse）"
+title:      "到灯塔去（To the Lighthouse）——[英]弗吉尼亚·伍尔夫"
 subtitle:   "我的读书"
 date:       2025-02-01 12:00:00
-author:     "[英]弗吉尼亚·伍尔夫"
+author:     "Guan"
 header-style: text
 catalog: true
 tags:

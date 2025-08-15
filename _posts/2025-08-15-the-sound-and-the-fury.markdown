@@ -1,9 +1,9 @@
 ---
 layout:     post
-title:      "喧哗与骚动（The Sound and the Fury）"
+title:      "喧哗与骚动（The Sound and the Fury）——[美]威廉·福克纳"
 subtitle:   "我的读书"
 date:       2025-08-15 12:00:00
-author:     "[美]威廉·福克纳"
+author:     "Guan"
 header-style: text
 catalog: true
 tags:
