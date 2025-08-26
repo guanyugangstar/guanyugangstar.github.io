@@ -5,9 +5,38 @@
     <description>这里是我一的个人小品文集，与你一起发现不一样的世界 | 要做一个好奇的思考者</description>
     <link>https://www.guanyugang.space/</link>
     <atom:link href="https://www.guanyugang.space/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 20 Aug 2025 04:10:37 +0000</pubDate>
-    <lastBuildDate>Wed, 20 Aug 2025 04:10:37 +0000</lastBuildDate>
+    <pubDate>Tue, 26 Aug 2025 06:51:28 +0000</pubDate>
+    <lastBuildDate>Tue, 26 Aug 2025 06:51:28 +0000</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>论道德</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;道德的核心问题&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;道德的核心问题只有两个：一是个体层面上，意志有无自由？二是社会层面上，何为正义？&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/daode01.png&quot; alt=&quot;道德的核心问题&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;对于第一个问题，“论自由”中已作出明确的回答，即人虽然无处不戴枷锁，但人天生自由。只有意志自由，才能产生道德。没有自由，就不会有责任，道德就会失去意义。&lt;/p&gt;
+
+&lt;p&gt;关于第二个问题，我将正义定义为社会中的人为的善，即有利于社会协作、发展和价值的一切思想和行为。社会条件下，人性本恶，正义根源于自利，私德产生了公德。正义维护了公益，产生人人得利的结果。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/daode02.png&quot; alt=&quot;正义&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;同真理一样，正义是有条件的。只有相对的正义，没有绝对的正义。当代社会中，正义的确定遵循字典式的原则序列安排。字典的首页，即正义的第一原则，就是生存优先原则。生存权高于自由、财产、机会等发展权。除非出于自我防御的生存需要，否则任何人和组织都不得剥夺其它个体的生存权。正义的第二原则，就是发展均等原则。这个原则的实现，要求己所不欲，勿施于人，结果将造成和促进社会发展的机会均等、自由民主、互惠互利。正义的第三原则，就是价值调节原则。人的价值，最终体现在人的尊严上。因自然或者社会偶然因素造成的不可避免的不平等，应当充分尊重最不利群体的价值，保障其必要的生存权和发展权，给与相应的补偿进行调节。从字典顺序上，第一原则优于第二原则，第二原则优于第三原则。&lt;/p&gt;
+
+&lt;p&gt;解决了上述两个问题后，道德的概念应运而生。所谓道德，就是在自由意志基础上满足社会正义原则的观念。伦理为道德观念要求的社会行为规范，法律为需要采取外部集体强制力保证执行的伦理规范。道德是内向的，伦理是外向的，法律为保证的。人的德性是指符合道德观念的个人品性，人性通过符合伦理的言行举止得以表现。&lt;/p&gt;
+</description>
+        <pubDate>Tue, 26 Aug 2025 12:00:00 +0000</pubDate>
+        <link>https://www.guanyugang.space/2025/08/26/daode/</link>
+        <guid isPermaLink="true">https://www.guanyugang.space/2025/08/26/daode/</guid>
+        
+        <category>随想</category>
+        
+        
+      </item>
     
       <item>
         <title>论自由</title>
@@ -92,7 +121,7 @@
   &lt;p&gt;论真理&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;无论何种知识，成为真理的本质不在于内容，而在于对其内容的确信。这个确信是人类社会共同体层面的确信，真的程度，即确信大小，取决于它在实践中的应用。&lt;/p&gt;
+&lt;p&gt;无论何种知识，成为真理的本质不仅在于内容，更在于对其内容的确信。这个确信是人类社会共同体层面的确信，真的程度，即确信大小，取决于它在实践中的应用。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/img/zhenli1.png&quot; alt=&quot;真理&quot; /&gt;&lt;/p&gt;
 
@@ -450,31 +479,6 @@ docker run -it -p 17777:8000 mineru-api
         <guid isPermaLink="true">https://www.guanyugang.space/2025/02/01/To-The-Lighthouse/</guid>
         
         <category>读书</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>论心灵</title>
-        <description>&lt;blockquote&gt;
-  &lt;p&gt;论心灵&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;人的心灵，即个体意识或者精神，是知觉流的现象统一体。从内容上，心灵就是各种印象的集合；从功能上，心灵由感觉、记忆、想象和意志构成。感觉提供心灵的质料，是心灵活动的初始印象。从来源看，感觉有感官产生的外在感觉，也有心理产生的内在感觉，而内在感觉就是情感和欲望。情感是人类生活最生动的部分，通过对快乐的追求以及对痛苦的避让，进而产生欲望。记忆是各种印象的存储，成为心灵质料的另一来源，这些质料是不鲜明的、易变化的、可再现的印象。回忆对记忆材料进行主动读取。想象是对心灵质料进行加工，形成知识和意见等印象的能力。如果形成的是知识，想象就被称为理智，知识由概念构成；如果形成的是意见，想象就可能沦为幻想，意见由观念构成。知识和意见共同组成经验。感觉、记忆通过想象的综合，提供给意志决策实践活动。意志就是决定做某事和不做某事的选择能力。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/xinling1.png&quot; alt=&quot;心灵&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;心灵具有同一性，无论是感觉、情感、概念、关系和事物，在心灵中留下的都是印象。心灵的差异性是指心灵的材料因来源不同产生差异。感觉是被动的，记忆有时主动、有时被动，想象和意志都是主动的。感觉经过想象的翅膀，可以增幅为激情和冲动。记忆由想象加工，定义了完整单一的自我。想象造成人类和动物最大的区别，使人能够超越动物，成为未来的物种，而不只是现在的。意志决定行为，呈现出人性和品格，表明你是一个什么样的人。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/xinling2.png&quot; alt=&quot;心灵&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;人和动物在心灵的功能和结果方面本质上并无差别。不同的是，人类的心灵，尤其在想象和意志方面，其复杂和丰富程度要明显高于动物，但这差异并不意味着任何道德和价值的含义。所有物种都属于同一个“一”。&lt;/p&gt;
-</description>
-        <pubDate>Wed, 01 Jan 2025 12:00:00 +0000</pubDate>
-        <link>https://www.guanyugang.space/2025/01/01/xinling/</link>
-        <guid isPermaLink="true">https://www.guanyugang.space/2025/01/01/xinling/</guid>
-        
-        <category>随想</category>
         
         
       </item>
