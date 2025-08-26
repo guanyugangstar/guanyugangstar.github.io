@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "我的世界观"
-subtitle:   " 论世界 "
+title:      "论世界"
+subtitle:   "我的世界观"
 date:       2025-01-01 12:00:00
 author:     "Guan"
 header-style: text
