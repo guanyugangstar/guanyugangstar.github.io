@@ -5,9 +5,32 @@
     <description>这里是我一的个人小品文集，与你一起发现不一样的世界 | 要做一个好奇的思考者</description>
     <link>https://www.guanyugang.space/</link>
     <atom:link href="https://www.guanyugang.space/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 01 Sep 2025 04:18:43 +0000</pubDate>
-    <lastBuildDate>Mon, 01 Sep 2025 04:18:43 +0000</lastBuildDate>
+    <pubDate>Fri, 05 Sep 2025 02:50:02 +0000</pubDate>
+    <lastBuildDate>Fri, 05 Sep 2025 02:50:02 +0000</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>论幸运</title>
+        <description>&lt;p&gt;我理解的幸运，是一个受限程度较少的弱定义，指一个人身心天生基本健全，可免除异常的劳苦和严重的病痛折磨，拥有必要的生存保障和一定的闲暇，能够经常独立思考，自主选择人生，从而自行承当相应后果。另一方面，作为幸运的否定，即不幸，是指一个人或许天生有较大的身心缺陷，或许遭受异常的劳苦和严重的病痛折磨，或许没有闲暇时间、缺少必要的保障、或许哪怕有闲暇也缺乏系统的独立思维，以致易受外界干扰，无法自主选择道路，故而无法自行承担责任。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/xinyun01.png&quot; alt=&quot;幸运&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;对于更高程度的幸运，是对幸运的强定义，即在弱定义基础上，还具备非非凡不可求的条件。如拥有罕见的天赋、难得的人生机遇、洞悉了深邃思想、甚至从道德和实践上实现造福全人类理想等等。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/xinyun02.png&quot; alt=&quot;幸运&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;既然是幸运，弱定义下也属一般不易的了。幸运中的有些偶然因素是不可选择的，如出生、人种、智商、家庭等，也有很多因素是可以选择的，这些可选的因素构成了“良心”的道德范畴^[1]。所以，一个人如果想克服偶然因素影响，成为一个较为幸运的人，至少还是有许多事情需要去做的。&lt;/p&gt;
+
+&lt;p&gt;^[1]: &lt;a href=&quot;/2025/08/26/daode/&quot;&gt;论道德&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 04 Sep 2025 12:00:00 +0000</pubDate>
+        <link>https://www.guanyugang.space/2025/09/04/xinyun/</link>
+        <guid isPermaLink="true">https://www.guanyugang.space/2025/09/04/xinyun/</guid>
+        
+        <category>随想</category>
+        
+        
+      </item>
     
       <item>
         <title>论成功</title>
@@ -19,7 +42,7 @@
 
 &lt;p&gt;&lt;img src=&quot;/img/chengong01.png&quot; alt=&quot;成功论&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;一般来说，机遇是成功的首要因素，天赋其次，最后是勤奋。卓越的天赋固然罕见，但欲凭天赋取得成功，则需更多的难得机遇方可促成。这是人的社会属性导致的必然结果。人类的庞大基数，始终不缺牛顿式的可能天才，但缺乏的是产生牛顿的各种机缘巧合。卓越的天赋固然稀有，成功的机遇更加渺茫。勤奋是人人具备的潜质，哪怕最懒惰之人，在饥饿状态下，遇到嘴边的食物，也是会主动咀嚼下咽食物的。只要机遇适可，勤奋总是不会缺席。&lt;/p&gt;
+&lt;p&gt;一般来说，机遇是成功的首要因素，天赋其次，最后是勤奋。卓越的天赋固然罕见，但欲凭天赋取得成功，则需更多的难得机遇方可促成。这是人的社会属性导致的必然结果。人类数量的庞大基数，任何时刻始终不缺牛顿式的可能天才，但缺乏的是产生牛顿的各种机缘巧合。卓越的天赋固然稀有，成功的机遇更加渺茫。勤奋是人人具备的潜质，哪怕最懒惰之人，在饥饿状态下，遇到嘴边的食物，也是会主动咀嚼下咽的。只要机遇适可，勤奋总是不会缺席。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/img/chengong02.png&quot; alt=&quot;成功论&quot; /&gt;&lt;/p&gt;
 
@@ -391,110 +414,6 @@
         <guid isPermaLink="true">https://www.guanyugang.space/2025/06/01/n8n-startup/</guid>
         
         <category>N8N</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Mineru本地安装要点</title>
-        <description>&lt;blockquote&gt;
-  &lt;p&gt;Mineru本地安装要点&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;git clone https://github.com/opendatalab/MinerU.git
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;MinerU
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;python &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; venv .venv
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;.venv&lt;span class=&quot;se&quot;&gt;\s&lt;/span&gt;cripts&lt;span class=&quot;se&quot;&gt;\a&lt;/span&gt;ctivate.ps1
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;uv pip &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; .[core] &lt;span class=&quot;c&quot;&gt;# 安装核心组件，不含GPU加速&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;修改 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;magic_pdf.json&lt;/code&gt;，将env的&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cuda&lt;/code&gt;修改为&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cpu&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;终端运行：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bash
-mineru -p &amp;lt;源文件地址/文件名.pdf&amp;gt; -o &amp;lt;目标地址&amp;gt;
-&lt;/code&gt;
-&lt;strong&gt;自动安装解析模型&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;Docker部署运行：
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; .&lt;span class=&quot;se&quot;&gt;\p&lt;/span&gt;rojects&lt;span class=&quot;se&quot;&gt;\w&lt;/span&gt;eb-api
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-      &lt;li&gt;退出虚拟环境，修改&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dockerfile&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;app.py&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;download_models.py&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;entrypoint.sh&lt;/code&gt;，在VS Code中将行尾符从CRLF修改为LF（Linux用）&lt;/li&gt;
-      &lt;li&gt;运行：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bash
-docker build -t mineru-api
-&lt;/code&gt;
-如果Hugging Face中下载模型时间过长，将会终止报错，请执行如下程序：
-        &lt;ul&gt;
-          &lt;li&gt;打开&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;download_models.py&lt;/code&gt;，将模型下载路径修改：
-            &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;n&quot;&gt;model_dir&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;snapshot_download&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;……&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;local_dir&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;./models/&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;layoutreader_model_dir&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;snapshot_download&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;……&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;local_dir&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;./models/layoutreader/&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;            &lt;/div&gt;
-          &lt;/li&gt;
-          &lt;li&gt;打开&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Dockerfile&lt;/code&gt;，将下载改为拷贝本地文件：
-            &lt;div class=&quot;language-dockerfile highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;c&quot;&gt;# Copy pre-downloaded models (删除原Run语句)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;COPY&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; models/models /opt/models/&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;COPY&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; models/layoutreader /opt/layoutreader/&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;            &lt;/div&gt;
-          &lt;/li&gt;
-          &lt;li&gt;进入虚拟环境中，运行：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bash
-python download_models.py
-&lt;/code&gt;
-将模型下载到本地&lt;/li&gt;
-          &lt;li&gt;
-            &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;deactivate
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;            &lt;/div&gt;
-          &lt;/li&gt;
-          &lt;li&gt;在第9步配置完Dify后，运行：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bash
-docker build -t mineru-api
-&lt;/code&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;启动容器：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bash
-docker run -it -p 17777:8000 mineru-api
-&lt;/code&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;配置Dify环境
-    &lt;ul&gt;
-      &lt;li&gt;进入Dify的env，设置&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FILES_URL=http://api:5001&lt;/code&gt;，将&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker-compose.yaml&lt;/code&gt;内容相应调整，并打开&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dify-api&lt;/code&gt;容器的&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ports: 5001:5001&lt;/code&gt;外部映射端口&lt;/li&gt;
-      &lt;li&gt;关闭重启Dify&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;下载Mineru插件，授信地址为：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;http://host.docker.internal:5001&lt;/code&gt;，类型本地部署，密码不填。&lt;/li&gt;
-&lt;/ol&gt;
-
-</description>
-        <pubDate>Sun, 01 Jun 2025 12:00:00 +0000</pubDate>
-        <link>https://www.guanyugang.space/2025/06/01/mineru/</link>
-        <guid isPermaLink="true">https://www.guanyugang.space/2025/06/01/mineru/</guid>
-        
-        <category>DIFY</category>
         
         
       </item>
