@@ -5,9 +5,34 @@
     <description>这里是我一的个人小品文集，与你一起发现不一样的世界 | 要做一个好奇的思考者</description>
     <link>https://www.guanyugang.space/</link>
     <atom:link href="https://www.guanyugang.space/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 06 Sep 2025 15:48:18 +0000</pubDate>
-    <lastBuildDate>Sat, 06 Sep 2025 15:48:18 +0000</lastBuildDate>
+    <pubDate>Thu, 18 Sep 2025 15:20:30 +0000</pubDate>
+    <lastBuildDate>Thu, 18 Sep 2025 15:20:30 +0000</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>论历史</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;历史的可能性&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;只有人类才有历史。历史的发生，是人类事件的堆积和嬗变，充斥着或然性。历史事件的背后蕴含着一条条脉络。历史学家的主要任务之一，就是在纷杂万绪中清理出这些脉络。如中国的近现代史，顺着时间轴，围绕着中华民族求醒、求生、求强的演进脉络展开，这一特征是外生内驱、由外向内的过程，经历了洋务的器物救国、立宪的制度救国、新文化的思想救国、社会改造的制度兴国和改革开放的器物兴国等不同阶段，中间被几次大规模的战争曾中断。总体上看，从救国到兴国，历史几乎走完了一轮循环。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/lishi01.png&quot; alt=&quot;历史&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;历史的研究，要防止理性的自负，任何独断论会显得可笑。即使再强大自信，仍然不要忘记或然性的绝对支配地位。除了现实的历史，还有历史的可能性，明的灭亡并不排除崇祯南下迁都的可能、袁世凯的复辟并不排除宋教仁北上成功组阁的可能……人类的存在难道不就是大自然的一个奇迹吗？所以，研究历史，重要的是描述和诠释，不是证明和预测。一部历史作品，最精彩的地方莫过于对重大事件或者特定时期的诠释和论述部分。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/lishi02.png&quot; alt=&quot;历史&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;历史的本质，就是单一共同体内或者不同共同体间为了求存和发展采取各种手段竞争、合作、分化和同化的形成史，历史的动力来自于生存的欲望。历史的发展不必然导致整体人类的幸福，却往往是人类激情、冲动和欲望的非理性产物。然而，可能性服务于现实性，所有的历史都是当代史。如何从历史经验吸取教训，受到启发，更好地引导现实，追求美好的未来，成为当今历史学家最紧迫最重要的任务。如对于中国未来的发展，曾有学者开出的药方是“第五个现代化”，引人深思。&lt;/p&gt;
+</description>
+        <pubDate>Thu, 18 Sep 2025 12:00:00 +0000</pubDate>
+        <link>https://www.guanyugang.space/2025/09/18/lishi/</link>
+        <guid isPermaLink="true">https://www.guanyugang.space/2025/09/18/lishi/</guid>
+        
+        <category>游记</category>
+        
+        
+      </item>
     
       <item>
         <title>论幸运</title>
@@ -367,59 +392,6 @@
         <category>AI编程</category>
         
         <category>DIFY</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>N8N的Docker启动命令</title>
-        <description>&lt;blockquote&gt;
-  &lt;p&gt;N8N的docker启动命令&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;docker run -d `
-  -e GENERIC_TIMEZONE=Asia/Shanghai `
-  --add-host=host.docker.internal:host-gateway `
-  --name n8n `
-  -p 5678:5678 `
-  -v n8n_data:/home/node/.n8n `
-  -v D:\docker\n8n_files:/home/node/Files `
-  -e N8N_DEFAULT_LOCALE=zh-CN `
-  -e N8N_SECURE_COOKIE=false `
-  -e DB_TYPE=postgresdb `
-  -e DB_POSTGRESDB_HOST=host.docker.internal `
-  -e DB_POSTGRESDB_PORT=5432 `
-  -e DB_POSTGRESDB_DATABASE=n8n `
-  -e DB_POSTGRESDB_USER=postgres `
-  -e DB_POSTGRESDB_PASSWORD=××××× `
-  n8nio/n8n:latest
-
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;注意：&lt;/strong&gt;环境变量&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;N8N_SECURE_COOKIE=false&lt;/code&gt;，可以访问HTTP协议。&lt;/p&gt;
-
-</description>
-        <pubDate>Sun, 01 Jun 2025 12:00:00 +0000</pubDate>
-        <link>https://www.guanyugang.space/2025/06/01/n8n-startup/</link>
-        <guid isPermaLink="true">https://www.guanyugang.space/2025/06/01/n8n-startup/</guid>
-        
-        <category>N8N</category>
         
         
       </item>
